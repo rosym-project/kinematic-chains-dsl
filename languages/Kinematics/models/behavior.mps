@@ -3,14 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="twf3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.eclipse.jdt.internal.compiler.ast(MPS.Core/)" />
     <import index="cewj" ref="r:cd13618c-02ad-4af8-a3e4-3414c58c4613(Kinematics.structure)" implicit="true" />
   </imports>
   <registry>
@@ -303,7 +300,7 @@
                 <node concept="2pJxcG" id="5mWmRiClBbd" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpee:gc$nh$Z" resolve="value" />
                   <node concept="Xl_RD" id="5mWmRiClBff" role="2pJxcZ">
-                    <property role="Xl_RC" value="0" />
+                    <property role="Xl_RC" value="0.0" />
                   </node>
                 </node>
               </node>
@@ -324,7 +321,7 @@
                 <node concept="2pJxcG" id="5mWmRiClBh$" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpee:gc$nh$Z" resolve="value" />
                   <node concept="Xl_RD" id="5mWmRiClBh_" role="2pJxcZ">
-                    <property role="Xl_RC" value="0" />
+                    <property role="Xl_RC" value="0.0" />
                   </node>
                 </node>
               </node>
