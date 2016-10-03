@@ -1987,5 +1987,33 @@
       <ref role="3XTgP7" node="4dYyq9PNs3G" resolve="lwr_arm_7_link" />
     </node>
   </node>
+  <node concept="u5KEY" id="nxFIIIdXsP">
+    <property role="TrG5h" value="nao" />
+    <node concept="u5KES" id="nxFIIIdXud" role="3XQLF5">
+      <property role="TrG5h" value="shoulderL" />
+    </node>
+    <node concept="u5KEZ" id="nxFIIIdXt0" role="3XQLF5">
+      <property role="TrG5h" value="shoulderLJoint" />
+      <ref role="u5Yp_" node="nxFIIIdXud" resolve="shoulderL" />
+      <ref role="u5Ypq" node="nxFIIIdXtt" resolve="upperArmL" />
+      <node concept="3XUy9m" id="nxFIIIdXyw" role="3XUCWA">
+        <node concept="3b6qkQ" id="nxFIIIdXyx" role="3XUy9h">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="nxFIIIdXyy" role="3XUy9s">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="nxFIIIdXzE" role="3XUy9n">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="nxFIIIdX$c" role="3XUy9o">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="nxFIIIdXtt" role="3XQLF5">
+      <property role="TrG5h" value="upperArmL" />
+    </node>
+  </node>
 </model>
 
