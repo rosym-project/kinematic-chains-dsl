@@ -36,7 +36,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -119,9 +121,6 @@
     <property role="TrG5h" value="RobotJoint" />
     <property role="3GE5qa" value="KinematicDescription" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3Wmswgx0nyZ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="PrWs8" id="5mWmRiCoH_7" role="PzmwI">
       <ref role="PrY4T" node="5mWmRiCoH_1" resolve="IAttachableCommentable" />
     </node>
@@ -201,9 +200,6 @@
     <property role="TrG5h" value="RobotLink" />
     <property role="3GE5qa" value="KinematicDescription" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3Wmswgx0nz1" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="PrWs8" id="5mWmRiCoSWY" role="PzmwI">
       <ref role="PrY4T" node="5mWmRiCoH_1" resolve="IAttachableCommentable" />
     </node>
@@ -371,6 +367,7 @@
   <node concept="1TIwiD" id="3Wmswgx0$rv">
     <property role="EcuMT" value="4545946235936327391" />
     <property role="TrG5h" value="KinematicChain" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3Wmswgx0$rw" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -939,6 +936,9 @@
   <node concept="PlHQZ" id="5mWmRiCpO6s">
     <property role="EcuMT" value="6177913345445151132" />
     <property role="TrG5h" value="IInnerRootNode" />
+    <node concept="PrWs8" id="37_2LIs4wQZ" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 
