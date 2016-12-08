@@ -367,7 +367,6 @@
   <node concept="1TIwiD" id="3Wmswgx0$rv">
     <property role="EcuMT" value="4545946235936327391" />
     <property role="TrG5h" value="KinematicChain" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3Wmswgx0$rw" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -936,7 +935,7 @@
   <node concept="PlHQZ" id="5mWmRiCpO6s">
     <property role="EcuMT" value="6177913345445151132" />
     <property role="TrG5h" value="IInnerRootNode" />
-    <node concept="PrWs8" id="37_2LIs4wQZ" role="PrDN$">
+    <node concept="PrWs8" id="5Ty_ZeCyKC5" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
