@@ -22,6 +22,7 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -68,6 +69,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="5mWmRiCkR6Q">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCkPwT" resolve="RobotColor" />
     <node concept="3EZMnI" id="5mWmRiCkR71" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCkR78" role="3EZMnx">
@@ -265,6 +267,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiClozX">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiClozM" resolve="GeometryBox" />
     <node concept="3EZMnI" id="5mWmRiClo$8" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClo$f" role="3EZMnx">
@@ -310,6 +313,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiClpvO">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiClpvA" resolve="GeometryCylinder" />
     <node concept="3EZMnI" id="5mWmRiClpvQ" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClpvR" role="3EZMnx">
@@ -349,6 +353,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiClqa2">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiClq9R" resolve="GeometrySphere" />
     <node concept="3EZMnI" id="5mWmRiClqa4" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClqa5" role="3EZMnx">
@@ -376,6 +381,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiClqy2">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiClqxI" resolve="GeometryMesh" />
     <node concept="3EZMnI" id="5mWmRiClqy4" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClqy5" role="3EZMnx">
@@ -433,6 +439,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiClvug">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCkPwQ" resolve="RobotLinkGeometry" />
     <node concept="3F1sOY" id="5mWmRiClvui" role="2wV5jI">
       <ref role="1NtTu8" to="cewj:5mWmRiClvu8" resolve="geometry" />
@@ -488,6 +495,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiClvx2">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiClvtW" resolve="RobotLinkCollision" />
     <node concept="3EZMnI" id="5mWmRiClvx4" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClvxb" role="3EZMnx">
@@ -570,6 +578,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiClz8l">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiClz85" resolve="RobotJointAxis" />
     <node concept="3EZMnI" id="5mWmRiClz8n" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClz8u" role="3EZMnx">
@@ -600,6 +609,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCl_Zg">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCl_Z4" resolve="RobotJointDynamics" />
     <node concept="3EZMnI" id="5mWmRiCl_Zi" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCl_Zp" role="3EZMnx">
@@ -639,6 +649,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiClB_3">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiClB$y" resolve="RobotJointLimit" />
     <node concept="3EZMnI" id="5mWmRiClB_5" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClB_c" role="3EZMnx">
@@ -702,6 +713,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiClDZT">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiClDZ$" resolve="RobotJointSafetyController" />
     <node concept="3EZMnI" id="5mWmRiClDZV" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClE02" role="3EZMnx">
@@ -765,6 +777,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiClGrH">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiClGrx" resolve="RobotJointCalibration" />
     <node concept="3EZMnI" id="5mWmRiClGrJ" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClGrQ" role="3EZMnx">
@@ -891,6 +904,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCmloY">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCmloP" resolve="RobotGazeboProvideFeedback" />
     <node concept="3EZMnI" id="5mWmRiCmlp0" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCmlp7" role="3EZMnx">
@@ -903,6 +917,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCmlpq">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCmlph" resolve="RobotGazeboImplicitSpringDamber" />
     <node concept="3EZMnI" id="5mWmRiCmlps" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCmlpz" role="3EZMnx">
@@ -915,6 +930,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCmlpY">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCmloK" resolve="RobotGazebo" />
     <node concept="3EZMnI" id="5mWmRiCmlq0" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCmlq7" role="3EZMnx">
@@ -948,6 +964,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCmlrs">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCmlra" resolve="RobotGazeboMaterial" />
     <node concept="3EZMnI" id="5mWmRiCmlru" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCmlr_" role="3EZMnx">
@@ -987,6 +1004,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCmlsU">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCmlr9" resolve="RobotGazeboVisual" />
     <node concept="3EZMnI" id="5mWmRiCmlsY" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCmlt5" role="3EZMnx">
@@ -999,6 +1017,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCmu8q">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCmu8e" resolve="RobotTransmissionActuator" />
     <node concept="3EZMnI" id="5mWmRiCmu8s" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCmu8z" role="3EZMnx">
@@ -1011,6 +1030,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCmu8W">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCmu8b" resolve="RobotTransmission" />
     <node concept="3EZMnI" id="5mWmRiCmu8Y" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCmu95" role="3EZMnx">
@@ -1122,6 +1142,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCnjpD">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCnjpu" resolve="RobotLinkMaterialRef" />
     <node concept="3EZMnI" id="4dYyq9P5zsw" role="2wV5jI">
       <node concept="3F0ifn" id="4dYyq9P5zsB" role="3EZMnx">
@@ -1140,6 +1161,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCnq7p">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCnq7e" resolve="RobotMaterial" />
     <node concept="3EZMnI" id="5mWmRiCnq7r" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCnq7y" role="3EZMnx">
@@ -1161,6 +1183,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCnq83">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCkPwP" resolve="RobotLinkMaterial" />
     <node concept="3EZMnI" id="5mWmRiCnEBT" role="2wV5jI">
       <node concept="l2Vlx" id="5mWmRiCnEBU" role="2iSdaV" />
@@ -1179,6 +1202,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiCp31Z">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1XX52x" to="cewj:5mWmRiCoH$L" resolve="AttachableComment" />
     <node concept="3EZMnI" id="5mWmRiCp32f" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCptzT" role="3EZMnx">
@@ -1208,6 +1232,92 @@
         </node>
       </node>
       <node concept="l2Vlx" id="5mWmRiCp32i" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2jRhxvskXvU">
+    <property role="3GE5qa" value="KinematicsChains" />
+    <ref role="1XX52x" to="cewj:2LnlX4fHNgu" resolve="KinematicChainConfiguration" />
+    <node concept="3EZMnI" id="2jRhxvskXwj" role="2wV5jI">
+      <node concept="3EZMnI" id="2jRhxvskXwP" role="3EZMnx">
+        <node concept="VPM3Z" id="2jRhxvskXwR" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="2jRhxvskXx$" role="3EZMnx">
+          <property role="3F0ifm" value="Kin. Chain. Configuration:" />
+        </node>
+        <node concept="3F0A7n" id="2jRhxvskXy7" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="2jRhxvslgcw" role="3EZMnx">
+          <property role="3F0ifm" value="for" />
+        </node>
+        <node concept="1iCGBv" id="2jRhxvslgdD" role="3EZMnx">
+          <ref role="1NtTu8" to="cewj:2jRhxvslgbG" resolve="associatedRobotModel" />
+          <node concept="1sVBvm" id="2jRhxvslgdF" role="1sWHZn">
+            <node concept="3F0A7n" id="2jRhxvslgeF" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="2jRhxvskXwU" role="2iSdaV" />
+      </node>
+      <node concept="35HoNQ" id="2jRhxvsl4Da" role="3EZMnx">
+        <node concept="pVoyu" id="2jRhxvsl4F6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="2jRhxvskXzr" role="3EZMnx">
+        <ref role="1NtTu8" to="cewj:2LnlX4fHNgz" resolve="kinematicChains" />
+        <node concept="l2Vlx" id="2jRhxvskXzt" role="2czzBx" />
+        <node concept="pVoyu" id="2jRhxvskX$$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="2jRhxvskX$K" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2jRhxvskX_Z" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2jRhxvskXwm" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2jRhxvsl4Bl">
+    <property role="3GE5qa" value="KinematicsChains" />
+    <ref role="1XX52x" to="cewj:3Wmswgx0$rv" resolve="KinematicChain" />
+    <node concept="3EZMnI" id="2jRhxvsl4Fi" role="2wV5jI">
+      <node concept="3F0ifn" id="2jRhxvsl4FO" role="3EZMnx">
+        <property role="3F0ifm" value="Chain:" />
+      </node>
+      <node concept="3F0A7n" id="2jRhxvsl4Gl" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2jRhxvsl4Ha" role="3EZMnx">
+        <property role="3F0ifm" value="base link:" />
+      </node>
+      <node concept="1iCGBv" id="2jRhxvsl4Ij" role="3EZMnx">
+        <ref role="1NtTu8" to="cewj:3Wmswgx0$ry" resolve="baseLink" />
+        <node concept="1sVBvm" id="2jRhxvsl4Il" role="1sWHZn">
+          <node concept="3F0A7n" id="2jRhxvsl4Jl" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2jRhxvsl4KC" role="3EZMnx">
+        <property role="3F0ifm" value=", tip link:" />
+      </node>
+      <node concept="1iCGBv" id="2jRhxvsl4N1" role="3EZMnx">
+        <ref role="1NtTu8" to="cewj:3Wmswgx0$rD" resolve="tipLink" />
+        <node concept="1sVBvm" id="2jRhxvsl4N3" role="1sWHZn">
+          <node concept="3F0A7n" id="2jRhxvsl4OF" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="2jRhxvsl4Fl" role="2iSdaV" />
     </node>
   </node>
 </model>

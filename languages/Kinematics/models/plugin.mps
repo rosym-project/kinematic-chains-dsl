@@ -619,7 +619,20 @@
             <property role="TrG5h" value="fileName" />
             <node concept="17QB3L" id="4dYyq9OYftm" role="1tU5fm" />
             <node concept="Xl_RD" id="4dYyq9OYftn" role="33vP2m">
-              <property role="Xl_RC" value="/homes/dwigand/code/cogimon/cogimon-gazebo-models/kuka-lwr-4plus/model.urdf" />
+              <property role="Xl_RC" value="/home/dwigand/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/kuka-lwr-4plus/model.urdf" />
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="2jRhxvsj6hO" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="2jRhxvshbpY" role="8Wnug">
+            <node concept="3cpWsn" id="2jRhxvshbq1" role="3cpWs9">
+              <property role="TrG5h" value="fileName" />
+              <node concept="17QB3L" id="2jRhxvshbpW" role="1tU5fm" />
+              <node concept="Xl_RD" id="2jRhxvshjTE" role="33vP2m">
+                <property role="Xl_RC" value="/home/dwigand/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/iit-coman/model.urdf" />
+              </node>
             </node>
           </node>
         </node>
@@ -633,7 +646,7 @@
             <node concept="2ShNRf" id="4dYyq9OYftr" role="33vP2m">
               <node concept="1pGfFk" id="4dYyq9OYfts" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="37vLTw" id="4dYyq9OYftt" role="37wK5m">
+                <node concept="37vLTw" id="2jRhxvsjjsP" role="37wK5m">
                   <ref role="3cqZAo" node="4dYyq9OYftl" resolve="fileName" />
                 </node>
               </node>
@@ -722,7 +735,7 @@
                           <node concept="Xl_RD" id="4dYyq9OYfu3" role="3uHU7B">
                             <property role="Xl_RC" value="Could not parse " />
                           </node>
-                          <node concept="37vLTw" id="4dYyq9OYfu4" role="3uHU7w">
+                          <node concept="37vLTw" id="2jRhxvsjoEg" role="3uHU7w">
                             <ref role="3cqZAo" node="4dYyq9OYftl" resolve="fileName" />
                           </node>
                         </node>
@@ -1599,7 +1612,7 @@
                     <node concept="Xl_RD" id="4dYyq9OYfyd" role="3uHU7B">
                       <property role="Xl_RC" value="File: " />
                     </node>
-                    <node concept="37vLTw" id="4dYyq9OYfye" role="3uHU7w">
+                    <node concept="37vLTw" id="2jRhxvsjpM5" role="3uHU7w">
                       <ref role="3cqZAo" node="4dYyq9OYftl" resolve="fileName" />
                     </node>
                   </node>
@@ -1629,7 +1642,7 @@
                     <node concept="Xl_RD" id="4dYyq9OYfyo" role="3uHU7B">
                       <property role="Xl_RC" value="File: " />
                     </node>
-                    <node concept="37vLTw" id="4dYyq9OYfyp" role="3uHU7w">
+                    <node concept="37vLTw" id="2jRhxvsjqDr" role="3uHU7w">
                       <ref role="3cqZAo" node="4dYyq9OYftl" resolve="fileName" />
                     </node>
                   </node>
@@ -1659,7 +1672,7 @@
                     <node concept="Xl_RD" id="4dYyq9OYfyz" role="3uHU7B">
                       <property role="Xl_RC" value="File: " />
                     </node>
-                    <node concept="37vLTw" id="4dYyq9OYfy$" role="3uHU7w">
+                    <node concept="37vLTw" id="2jRhxvsjrwJ" role="3uHU7w">
                       <ref role="3cqZAo" node="4dYyq9OYftl" resolve="fileName" />
                     </node>
                   </node>

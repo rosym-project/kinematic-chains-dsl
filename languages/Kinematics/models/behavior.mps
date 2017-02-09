@@ -100,7 +100,7 @@
             <node concept="2OqwBi" id="5mWmRiClfVq" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClfQ3" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClg1x" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_m" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_m" resolve="Px" />
               </node>
             </node>
           </node>
@@ -121,7 +121,7 @@
             <node concept="2OqwBi" id="5mWmRiClgVb" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClgVc" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClh87" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_r" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_r" resolve="Py" />
               </node>
             </node>
           </node>
@@ -142,7 +142,7 @@
             <node concept="2OqwBi" id="5mWmRiClgVB" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClgVC" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClhg9" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_x" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_x" resolve="Pz" />
               </node>
             </node>
           </node>
@@ -168,7 +168,7 @@
             <node concept="2OqwBi" id="5mWmRiClhn$" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClhn_" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClhMG" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_d" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_d" resolve="Rr" />
               </node>
             </node>
           </node>
@@ -189,7 +189,7 @@
             <node concept="2OqwBi" id="5mWmRiClhnH" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClhnI" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClhV6" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_f" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_f" resolve="Rp" />
               </node>
             </node>
           </node>
@@ -210,7 +210,7 @@
             <node concept="2OqwBi" id="5mWmRiClhnQ" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClhnR" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiCli3w" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_i" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiCkU_i" resolve="Ry" />
               </node>
             </node>
           </node>
@@ -219,6 +219,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5mWmRiCl$Q4">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="13h7C2" to="cewj:5mWmRiClz85" resolve="RobotJointAxis" />
     <node concept="13hLZK" id="5mWmRiCl$Q5" role="13h7CW">
       <node concept="3clFbS" id="5mWmRiCl$Q6" role="2VODD2">
@@ -238,7 +239,7 @@
             <node concept="2OqwBi" id="5mWmRiCl$VA" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiCl$Qf" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiCl_1H" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiClz86" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiClz86" resolve="aX" />
               </node>
             </node>
           </node>
@@ -259,7 +260,7 @@
             <node concept="2OqwBi" id="5mWmRiCl_yo" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiCl_yp" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiCl_MC" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiClz88" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiClz88" resolve="aY" />
               </node>
             </node>
           </node>
@@ -280,7 +281,7 @@
             <node concept="2OqwBi" id="5mWmRiCl_yO" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiCl_yP" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiCl_Wi" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiClz8b" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiClz8b" resolve="aZ" />
               </node>
             </node>
           </node>
@@ -289,6 +290,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5mWmRiClAy0">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="13h7C2" to="cewj:5mWmRiCl_Z4" resolve="RobotJointDynamics" />
     <node concept="13hLZK" id="5mWmRiClAy1" role="13h7CW">
       <node concept="3clFbS" id="5mWmRiClAy2" role="2VODD2">
@@ -308,7 +310,7 @@
             <node concept="2OqwBi" id="5mWmRiClABy" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClAyb" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClAHD" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiCl_Z5" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiCl_Z5" resolve="damping" />
               </node>
             </node>
           </node>
@@ -329,7 +331,7 @@
             <node concept="2OqwBi" id="5mWmRiClBhA" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClBhB" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClBws" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiCl_Z7" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiCl_Z7" resolve="friction" />
               </node>
             </node>
           </node>
@@ -338,6 +340,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5mWmRiClBBV">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="13h7C2" to="cewj:5mWmRiClB$y" resolve="RobotJointLimit" />
     <node concept="13hLZK" id="5mWmRiClBBW" role="13h7CW">
       <node concept="3clFbS" id="5mWmRiClBBX" role="2VODD2">
@@ -357,7 +360,7 @@
             <node concept="2OqwBi" id="5mWmRiClBHt" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClBC6" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClBTi" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiClB$_" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiClB$_" resolve="lower" />
               </node>
             </node>
           </node>
@@ -378,7 +381,7 @@
             <node concept="2OqwBi" id="5mWmRiClCsx" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClCsy" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClCOX" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiClB$C" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiClB$C" resolve="upper" />
               </node>
             </node>
           </node>
@@ -387,6 +390,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5mWmRiClE2L">
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="13h7C2" to="cewj:5mWmRiClDZ$" resolve="RobotJointSafetyController" />
     <node concept="13hLZK" id="5mWmRiClE2M" role="13h7CW">
       <node concept="3clFbS" id="5mWmRiClE2N" role="2VODD2">
@@ -406,7 +410,7 @@
             <node concept="2OqwBi" id="5mWmRiClE8j" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClE2W" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClEnO" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiClDZ_" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiClDZ_" resolve="soft_lower_limit" />
               </node>
             </node>
           </node>
@@ -427,7 +431,7 @@
             <node concept="2OqwBi" id="5mWmRiClEZk" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClEZl" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClFiQ" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiClDZB" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiClDZB" resolve="soft_upper_limit" />
               </node>
             </node>
           </node>
@@ -448,7 +452,7 @@
             <node concept="2OqwBi" id="5mWmRiClF05" role="37vLTJ">
               <node concept="13iPFW" id="5mWmRiClF06" role="2Oq$k0" />
               <node concept="3TrEf2" id="5mWmRiClFsw" role="2OqNvi">
-                <ref role="3Tt5mk" to="cewj:5mWmRiClDZE" />
+                <ref role="3Tt5mk" to="cewj:5mWmRiClDZE" resolve="k_position" />
               </node>
             </node>
           </node>

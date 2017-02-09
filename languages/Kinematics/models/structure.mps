@@ -367,6 +367,7 @@
   <node concept="1TIwiD" id="3Wmswgx0$rv">
     <property role="EcuMT" value="4545946235936327391" />
     <property role="TrG5h" value="KinematicChain" />
+    <property role="3GE5qa" value="KinematicsChains" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3Wmswgx0$rw" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -424,6 +425,7 @@
   <node concept="1TIwiD" id="5mWmRiCkPwP">
     <property role="EcuMT" value="6177913345443846197" />
     <property role="TrG5h" value="RobotLinkMaterial" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5mWmRiCnjpb" role="PzmwI">
       <ref role="PrY4T" node="5mWmRiCnjpa" resolve="IRobotLinkMaterial" />
@@ -441,6 +443,7 @@
   <node concept="1TIwiD" id="5mWmRiCkPwQ">
     <property role="EcuMT" value="6177913345443846198" />
     <property role="TrG5h" value="RobotLinkGeometry" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mWmRiClvu8" role="1TKVEi">
       <property role="IQ2ns" value="6177913345444018056" />
@@ -453,6 +456,7 @@
   <node concept="1TIwiD" id="5mWmRiCkPwT">
     <property role="EcuMT" value="6177913345443846201" />
     <property role="TrG5h" value="RobotColor" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mWmRiCkPxb" role="1TKVEi">
       <property role="IQ2ns" value="6177913345443846219" />
@@ -489,10 +493,12 @@
   <node concept="PlHQZ" id="5mWmRiClozL">
     <property role="EcuMT" value="6177913345443989745" />
     <property role="TrG5h" value="IRobotLinkGeometryType" />
+    <property role="3GE5qa" value="Kinematics" />
   </node>
   <node concept="1TIwiD" id="5mWmRiClozM">
     <property role="EcuMT" value="6177913345443989746" />
     <property role="TrG5h" value="GeometryBox" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5mWmRiClozN" role="PzmwI">
       <ref role="PrY4T" node="5mWmRiClozL" resolve="IRobotLinkGeometryType" />
@@ -525,6 +531,7 @@
   <node concept="1TIwiD" id="5mWmRiClpvA">
     <property role="EcuMT" value="6177913345443993574" />
     <property role="TrG5h" value="GeometryCylinder" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5mWmRiClpvB" role="PzmwI">
       <ref role="PrY4T" node="5mWmRiClozL" resolve="IRobotLinkGeometryType" />
@@ -550,6 +557,7 @@
   <node concept="1TIwiD" id="5mWmRiClq9R">
     <property role="EcuMT" value="6177913345443996279" />
     <property role="TrG5h" value="GeometrySphere" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5mWmRiClq9S" role="PzmwI">
       <ref role="PrY4T" node="5mWmRiClozL" resolve="IRobotLinkGeometryType" />
@@ -568,6 +576,7 @@
   <node concept="1TIwiD" id="5mWmRiClqxI">
     <property role="EcuMT" value="6177913345443997806" />
     <property role="TrG5h" value="GeometryMesh" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5mWmRiClqxJ" role="PzmwI">
       <ref role="PrY4T" node="5mWmRiClozL" resolve="IRobotLinkGeometryType" />
@@ -605,6 +614,7 @@
   <node concept="1TIwiD" id="5mWmRiClvtW">
     <property role="EcuMT" value="6177913345444018044" />
     <property role="TrG5h" value="RobotLinkCollision" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mWmRiClvu3" role="1TKVEi">
       <property role="IQ2ns" value="6177913345444018051" />
@@ -629,6 +639,7 @@
   <node concept="1TIwiD" id="5mWmRiClz85">
     <property role="EcuMT" value="6177913345444033029" />
     <property role="TrG5h" value="RobotJointAxis" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mWmRiClz86" role="1TKVEi">
       <property role="IQ2ns" value="6177913345444033030" />
@@ -655,6 +666,7 @@
   <node concept="1TIwiD" id="5mWmRiCl_Z4">
     <property role="EcuMT" value="6177913345444044740" />
     <property role="TrG5h" value="RobotJointDynamics" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mWmRiCl_Z5" role="1TKVEi">
       <property role="IQ2ns" value="6177913345444044741" />
@@ -672,6 +684,7 @@
   <node concept="1TIwiD" id="5mWmRiClB$y">
     <property role="EcuMT" value="6177913345444051234" />
     <property role="TrG5h" value="RobotJointLimit" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mWmRiClB$_" role="1TKVEi">
       <property role="IQ2ns" value="6177913345444051237" />
@@ -703,6 +716,7 @@
   <node concept="1TIwiD" id="5mWmRiClDZ$">
     <property role="EcuMT" value="6177913345444061156" />
     <property role="TrG5h" value="RobotJointSafetyController" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mWmRiClDZ_" role="1TKVEi">
       <property role="IQ2ns" value="6177913345444061157" />
@@ -733,6 +747,7 @@
   <node concept="1TIwiD" id="5mWmRiClGrx">
     <property role="EcuMT" value="6177913345444071137" />
     <property role="TrG5h" value="RobotJointCalibration" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mWmRiClGry" role="1TKVEi">
       <property role="IQ2ns" value="6177913345444071138" />
@@ -750,6 +765,7 @@
   <node concept="1TIwiD" id="5mWmRiCmloK">
     <property role="EcuMT" value="6177913345444238896" />
     <property role="TrG5h" value="RobotGazebo" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mWmRiCmloN" role="1TKVEi">
       <property role="IQ2ns" value="6177913345444238899" />
@@ -780,6 +796,7 @@
   <node concept="1TIwiD" id="5mWmRiCmloP">
     <property role="EcuMT" value="6177913345444238901" />
     <property role="TrG5h" value="RobotGazeboProvideFeedback" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5mWmRiCmloQ" role="1TKVEl">
       <property role="IQ2nx" value="6177913345444238902" />
@@ -790,6 +807,7 @@
   <node concept="1TIwiD" id="5mWmRiCmlph">
     <property role="EcuMT" value="6177913345444238929" />
     <property role="TrG5h" value="RobotGazeboImplicitSpringDamber" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5mWmRiCmlpi" role="1TKVEl">
       <property role="IQ2nx" value="6177913345444238930" />
@@ -800,6 +818,7 @@
   <node concept="1TIwiD" id="5mWmRiCmlr9">
     <property role="EcuMT" value="6177913345444239049" />
     <property role="TrG5h" value="RobotGazeboVisual" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mWmRiCmlsM" role="1TKVEi">
       <property role="IQ2ns" value="6177913345444239154" />
@@ -812,6 +831,7 @@
   <node concept="1TIwiD" id="5mWmRiCmlra">
     <property role="EcuMT" value="6177913345444239050" />
     <property role="TrG5h" value="RobotGazeboMaterial" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5mWmRiCmlrh" role="1TKVEl">
       <property role="IQ2nx" value="6177913345444239057" />
@@ -827,6 +847,7 @@
   <node concept="1TIwiD" id="5mWmRiCmu8b">
     <property role="EcuMT" value="6177913345444274699" />
     <property role="TrG5h" value="RobotTransmission" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mWmRiCmu8H" role="1TKVEi">
       <property role="IQ2ns" value="6177913345444274733" />
@@ -859,6 +880,7 @@
   <node concept="1TIwiD" id="5mWmRiCmu8e">
     <property role="EcuMT" value="6177913345444274702" />
     <property role="TrG5h" value="RobotTransmissionActuator" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5mWmRiCmu8h" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -870,10 +892,12 @@
   <node concept="PlHQZ" id="5mWmRiCnjpa">
     <property role="EcuMT" value="6177913345444492874" />
     <property role="TrG5h" value="IRobotLinkMaterial" />
+    <property role="3GE5qa" value="Kinematics" />
   </node>
   <node concept="1TIwiD" id="5mWmRiCnjpu">
     <property role="EcuMT" value="6177913345444492894" />
     <property role="TrG5h" value="RobotLinkMaterialRef" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5mWmRiCnjpv" role="PzmwI">
       <ref role="PrY4T" node="5mWmRiCnjpa" resolve="IRobotLinkMaterial" />
@@ -892,6 +916,7 @@
   <node concept="1TIwiD" id="5mWmRiCnq7e">
     <property role="EcuMT" value="6177913345444520398" />
     <property role="TrG5h" value="RobotMaterial" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5mWmRiCnq7f" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -909,6 +934,7 @@
   <node concept="1TIwiD" id="5mWmRiCoH$L">
     <property role="EcuMT" value="6177913345444862257" />
     <property role="TrG5h" value="AttachableComment" />
+    <property role="3GE5qa" value="Kinematics" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="5mWmRiCoH$X" role="lGtFl">
       <property role="Hh88m" value="xmlcomment" />
@@ -931,12 +957,38 @@
   <node concept="PlHQZ" id="5mWmRiCoH_1">
     <property role="EcuMT" value="6177913345444862273" />
     <property role="TrG5h" value="IAttachableCommentable" />
+    <property role="3GE5qa" value="Kinematics" />
   </node>
   <node concept="PlHQZ" id="5mWmRiCpO6s">
     <property role="EcuMT" value="6177913345445151132" />
     <property role="TrG5h" value="IInnerRootNode" />
+    <property role="3GE5qa" value="Kinematics" />
     <node concept="PrWs8" id="5Ty_ZeCyKC5" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2LnlX4fHNgu">
+    <property role="EcuMT" value="3195119016066102302" />
+    <property role="TrG5h" value="KinematicChainConfiguration" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="KinematicsChains" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2LnlX4fHNgv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2LnlX4fHNgz" role="1TKVEi">
+      <property role="IQ2ns" value="3195119016066102307" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="kinematicChains" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3Wmswgx0$rv" resolve="KinematicChain" />
+    </node>
+    <node concept="1TJgyj" id="2jRhxvslgbG" role="1TKVEi">
+      <property role="IQ2ns" value="2663674772907688684" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="associatedRobotModel" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3Wmswgx0nyU" resolve="RobotModel" />
     </node>
   </node>
 </model>
