@@ -22,7 +22,6 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
-      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -1234,55 +1233,6 @@
       <node concept="l2Vlx" id="5mWmRiCp32i" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="2jRhxvskXvU">
-    <property role="3GE5qa" value="KinematicsChains" />
-    <ref role="1XX52x" to="cewj:2LnlX4fHNgu" resolve="KinematicChainConfiguration" />
-    <node concept="3EZMnI" id="2jRhxvskXwj" role="2wV5jI">
-      <node concept="3EZMnI" id="2jRhxvskXwP" role="3EZMnx">
-        <node concept="VPM3Z" id="2jRhxvskXwR" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="2jRhxvskXx$" role="3EZMnx">
-          <property role="3F0ifm" value="Kin. Chain. Configuration:" />
-        </node>
-        <node concept="3F0A7n" id="2jRhxvskXy7" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-        <node concept="3F0ifn" id="2jRhxvslgcw" role="3EZMnx">
-          <property role="3F0ifm" value="for" />
-        </node>
-        <node concept="1iCGBv" id="2jRhxvslgdD" role="3EZMnx">
-          <ref role="1NtTu8" to="cewj:2jRhxvslgbG" resolve="associatedRobotModel" />
-          <node concept="1sVBvm" id="2jRhxvslgdF" role="1sWHZn">
-            <node concept="3F0A7n" id="2jRhxvslgeF" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
-        </node>
-        <node concept="2iRfu4" id="2jRhxvskXwU" role="2iSdaV" />
-      </node>
-      <node concept="35HoNQ" id="2jRhxvsl4Da" role="3EZMnx">
-        <node concept="pVoyu" id="2jRhxvsl4F6" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F2HdR" id="2jRhxvskXzr" role="3EZMnx">
-        <ref role="1NtTu8" to="cewj:2LnlX4fHNgz" resolve="kinematicChains" />
-        <node concept="l2Vlx" id="2jRhxvskXzt" role="2czzBx" />
-        <node concept="pVoyu" id="2jRhxvskX$$" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pj6Ft" id="2jRhxvskX$K" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="2jRhxvskX_Z" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="2jRhxvskXwm" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="2jRhxvsl4Bl">
     <property role="3GE5qa" value="KinematicsChains" />
     <ref role="1XX52x" to="cewj:3Wmswgx0$rv" resolve="KinematicChain" />
@@ -1317,7 +1267,52 @@
           </node>
         </node>
       </node>
-      <node concept="2iRfu4" id="2jRhxvsl4Fl" role="2iSdaV" />
+      <node concept="l2Vlx" id="5wO0nxMu0gQ" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="6p7_7P8XsTY" role="6VMZX">
+      <node concept="3F0ifn" id="10opGg0hyXX" role="3EZMnx">
+        <property role="3F0ifm" value="availableControlModes:" />
+        <node concept="pVoyu" id="5wO0nxMui5N" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5wO0nxMu_rh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="10opGg0hz3K" role="3EZMnx">
+        <ref role="1NtTu8" to="cewj:10opGg0hrTG" resolve="availableControlModes" />
+        <node concept="2iRkQZ" id="6p7_7P8X_uN" role="2czzBx" />
+      </node>
+      <node concept="35HoNQ" id="6p7_7P8XACd" role="3EZMnx" />
+      <node concept="3EZMnI" id="6p7_7P8XAHw" role="3EZMnx">
+        <node concept="VPM3Z" id="6p7_7P8XAHy" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="6p7_7P8XAH$" role="3EZMnx">
+          <property role="3F0ifm" value="activeControlMode:" />
+        </node>
+        <node concept="1iCGBv" id="6p7_7P8YDYc" role="3EZMnx">
+          <ref role="1NtTu8" to="cewj:6p7_7P8YDWq" resolve="activeControlMode" />
+          <node concept="1sVBvm" id="6p7_7P8YDYe" role="1sWHZn">
+            <node concept="3F0A7n" id="6p7_7P8YDZi" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="cewj:10opGg0hrXE" resolve="controlmode" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="6p7_7P8XAH_" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="6p7_7P8XsU1" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6p7_7P8Y2OB">
+    <ref role="1XX52x" to="cewj:10opGg0hrUt" resolve="RobotControlMode_SmartChild" />
+    <node concept="3EZMnI" id="6p7_7P8Y42a" role="2wV5jI">
+      <node concept="l2Vlx" id="6p7_7P8Y42b" role="2iSdaV" />
+      <node concept="3F0ifn" id="6p7_7P8Y42G" role="3EZMnx" />
+      <node concept="3F0A7n" id="6p7_7P8Y43u" role="3EZMnx">
+        <ref role="1NtTu8" to="cewj:10opGg0hrXE" resolve="controlmode" />
+      </node>
     </node>
   </node>
 </model>

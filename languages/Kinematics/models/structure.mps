@@ -183,14 +183,14 @@
     <node concept="1TJgyj" id="3Wmswgx0phx" role="1TKVEi">
       <property role="IQ2ns" value="4545946235936281697" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="child" />
+      <property role="20kJfa" value="childLink" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3Wmswgx0nyW" resolve="RobotLink" />
     </node>
     <node concept="1TJgyj" id="3Wmswgx0phu" role="1TKVEi">
       <property role="IQ2ns" value="4545946235936281694" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="parent" />
+      <property role="20kJfa" value="parentLink" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3Wmswgx0nyW" resolve="RobotLink" />
     </node>
@@ -369,6 +369,18 @@
     <property role="TrG5h" value="KinematicChain" />
     <property role="3GE5qa" value="KinematicsChains" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="10opGg0hrTG" role="1TKVEi">
+      <property role="IQ2ns" value="1159789896052096620" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="availableControlModes" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="10opGg0hrUt" resolve="RobotControlMode_SmartChild" />
+    </node>
+    <node concept="1TJgyi" id="10opGg0hrTr" role="1TKVEl">
+      <property role="IQ2nx" value="1159789896052096603" />
+      <property role="TrG5h" value="activeControlMode" />
+      <ref role="AX2Wp" node="10opGg0hrCM" resolve="RobotControlModeEnum" />
+    </node>
     <node concept="PrWs8" id="3Wmswgx0$rw" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -388,6 +400,13 @@
       <property role="20kJfa" value="tipLink" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3Wmswgx0nyW" resolve="RobotLink" />
+    </node>
+    <node concept="1TJgyj" id="6p7_7P8YDWq" role="1TKVEi">
+      <property role="IQ2ns" value="7370022581031313178" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="activeControlMode" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="10opGg0hrUt" resolve="RobotControlMode_SmartChild" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mWmRiCkPwM">
@@ -967,28 +986,30 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2LnlX4fHNgu">
-    <property role="EcuMT" value="3195119016066102302" />
-    <property role="TrG5h" value="KinematicChainConfiguration" />
-    <property role="19KtqR" value="true" />
-    <property role="3GE5qa" value="KinematicsChains" />
+  <node concept="AxPO7" id="10opGg0hrCM">
+    <property role="TrG5h" value="RobotControlModeEnum" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="10opGg0hrCN" role="M5hS2">
+      <property role="1uS6qv" value="JointPositionCtrl" />
+      <property role="1uS6qo" value="JointPositionCtrl" />
+    </node>
+    <node concept="M4N5e" id="10opGg0hrG0" role="M5hS2">
+      <property role="1uS6qv" value="JointImpedanceCtrl" />
+      <property role="1uS6qo" value="JointImpedanceCtrl" />
+    </node>
+    <node concept="M4N5e" id="10opGg0hrGx" role="M5hS2">
+      <property role="1uS6qv" value="JointTorqueCtrl" />
+      <property role="1uS6qo" value="JointTorqueCtrl" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="10opGg0hrUt">
+    <property role="EcuMT" value="1159789896052096669" />
+    <property role="TrG5h" value="RobotControlMode_SmartChild" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2LnlX4fHNgv" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="2LnlX4fHNgz" role="1TKVEi">
-      <property role="IQ2ns" value="3195119016066102307" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="kinematicChains" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3Wmswgx0$rv" resolve="KinematicChain" />
-    </node>
-    <node concept="1TJgyj" id="2jRhxvslgbG" role="1TKVEi">
-      <property role="IQ2ns" value="2663674772907688684" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="associatedRobotModel" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3Wmswgx0nyU" resolve="RobotModel" />
+    <node concept="1TJgyi" id="10opGg0hrXE" role="1TKVEl">
+      <property role="IQ2nx" value="1159789896052096874" />
+      <property role="TrG5h" value="controlmode" />
+      <ref role="AX2Wp" node="10opGg0hrCM" resolve="RobotControlModeEnum" />
     </node>
   </node>
 </model>
