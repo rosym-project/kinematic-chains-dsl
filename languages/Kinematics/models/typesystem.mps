@@ -21,6 +21,7 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -29,6 +30,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -1202,6 +1206,55 @@
     <node concept="1YaCAy" id="6p7_7P94PlK" role="1YuTPh">
       <property role="TrG5h" value="kinematicChain" />
       <ref role="1YaFvo" to="cewj:3Wmswgx0$rv" resolve="KinematicChain" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6Q1aqFNMwDr">
+    <property role="TrG5h" value="check_ControlMode" />
+    <node concept="3clFbS" id="6Q1aqFNMwDs" role="18ibNy">
+      <node concept="3clFbJ" id="6Q1aqFNMwGu" role="3cqZAp">
+        <node concept="3clFbC" id="6Q1aqFNMxSb" role="3clFbw">
+          <node concept="3clFbT" id="6Q1aqFNMxW2" role="3uHU7w">
+            <property role="3clFbU" value="true" />
+          </node>
+          <node concept="2OqwBi" id="6Q1aqFNMwQJ" role="3uHU7B">
+            <node concept="1YBJjd" id="6Q1aqFNMwHe" role="2Oq$k0">
+              <ref role="1YBMHb" node="6Q1aqFNMwDu" resolve="controlMode" />
+            </node>
+            <node concept="3TrcHB" id="6Q1aqFNMwZ0" role="2OqNvi">
+              <ref role="3TsBF5" to="cewj:6yo9VC25Cm6" resolve="virtual" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6Q1aqFNMwGw" role="3clFbx">
+          <node concept="3clFbJ" id="6Q1aqFNMxYn" role="3cqZAp">
+            <node concept="2OqwBi" id="6Q1aqFNMz5l" role="3clFbw">
+              <node concept="2OqwBi" id="6Q1aqFNMy8C" role="2Oq$k0">
+                <node concept="1YBJjd" id="6Q1aqFNMxZ7" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6Q1aqFNMwDu" resolve="controlMode" />
+                </node>
+                <node concept="3TrEf2" id="6Q1aqFNMyj2" role="2OqNvi">
+                  <ref role="3Tt5mk" to="cewj:6Q1aqFNKko9" resolve="basedOn" />
+                </node>
+              </node>
+              <node concept="3w_OXm" id="6Q1aqFNMzib" role="2OqNvi" />
+            </node>
+            <node concept="3clFbS" id="6Q1aqFNMxYp" role="3clFbx">
+              <node concept="2MkqsV" id="6Q1aqFNMzl2" role="3cqZAp">
+                <node concept="Xl_RD" id="6Q1aqFNMzlM" role="2MkJ7o">
+                  <property role="Xl_RC" value="Virtual Control Modes need to be based on an existing Control Mode!" />
+                </node>
+                <node concept="1YBJjd" id="6Q1aqFNMzm9" role="2OEOjV">
+                  <ref role="1YBMHb" node="6Q1aqFNMwDu" resolve="controlMode" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6Q1aqFNMwDu" role="1YuTPh">
+      <property role="TrG5h" value="controlMode" />
+      <ref role="1YaFvo" to="cewj:6yo9VC25ChO" resolve="ControlMode" />
     </node>
   </node>
 </model>

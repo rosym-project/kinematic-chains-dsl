@@ -374,12 +374,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="availableControlModes" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="10opGg0hrUt" resolve="RobotControlMode_SmartChild" />
-    </node>
-    <node concept="1TJgyi" id="10opGg0hrTr" role="1TKVEl">
-      <property role="IQ2nx" value="1159789896052096603" />
-      <property role="TrG5h" value="activeControlMode" />
-      <ref role="AX2Wp" node="10opGg0hrCM" resolve="RobotControlModeEnum" />
+      <ref role="20lvS9" node="10opGg0hrUt" resolve="ControlMode_SmartChild" />
     </node>
     <node concept="PrWs8" id="3Wmswgx0$rw" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -406,7 +401,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="activeControlMode" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="10opGg0hrUt" resolve="RobotControlMode_SmartChild" />
+      <ref role="20lvS9" node="10opGg0hrUt" resolve="ControlMode_SmartChild" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mWmRiCkPwM">
@@ -986,30 +981,43 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="AxPO7" id="10opGg0hrCM">
-    <property role="TrG5h" value="RobotControlModeEnum" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="10opGg0hrCN" role="M5hS2">
-      <property role="1uS6qv" value="JointPositionCtrl" />
-      <property role="1uS6qo" value="JointPositionCtrl" />
-    </node>
-    <node concept="M4N5e" id="10opGg0hrG0" role="M5hS2">
-      <property role="1uS6qv" value="JointImpedanceCtrl" />
-      <property role="1uS6qo" value="JointImpedanceCtrl" />
-    </node>
-    <node concept="M4N5e" id="10opGg0hrGx" role="M5hS2">
-      <property role="1uS6qv" value="JointTorqueCtrl" />
-      <property role="1uS6qo" value="JointTorqueCtrl" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="10opGg0hrUt">
     <property role="EcuMT" value="1159789896052096669" />
-    <property role="TrG5h" value="RobotControlMode_SmartChild" />
+    <property role="TrG5h" value="ControlMode_SmartChild" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="10opGg0hrXE" role="1TKVEl">
-      <property role="IQ2nx" value="1159789896052096874" />
-      <property role="TrG5h" value="controlmode" />
-      <ref role="AX2Wp" node="10opGg0hrCM" resolve="RobotControlModeEnum" />
+    <node concept="1TJgyj" id="6yo9VC25CpN" role="1TKVEi">
+      <property role="IQ2ns" value="7536817656256956019" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="controlmode" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6yo9VC25ChO" resolve="ControlMode" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6yo9VC25ChO">
+    <property role="EcuMT" value="7536817656256955508" />
+    <property role="TrG5h" value="ControlMode" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5S9zKKpPYgu" role="1TKVEi">
+      <property role="IQ2ns" value="6776104396491580446" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expectedDataTypes" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+    <node concept="1TJgyi" id="6yo9VC25Cm6" role="1TKVEl">
+      <property role="IQ2nx" value="7536817656256955782" />
+      <property role="TrG5h" value="virtual" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="6yo9VC25Cli" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6Q1aqFNKko9" role="1TKVEi">
+      <property role="IQ2ns" value="7890633836340528649" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="basedOn" />
+      <ref role="20lvS9" node="6yo9VC25ChO" resolve="ControlMode" />
     </node>
   </node>
 </model>
