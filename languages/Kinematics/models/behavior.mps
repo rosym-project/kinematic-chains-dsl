@@ -2,8 +2,8 @@
 <model ref="r:508cb62d-392f-4e80-8340-a4df853548eb(Kinematics.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -151,8 +151,8 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
@@ -733,9 +733,11 @@
                                         </node>
                                         <node concept="2OqwBi" id="6p7_7P90PPl" role="3uHU7B">
                                           <node concept="1PxgMI" id="6p7_7P90PjM" role="2Oq$k0">
-                                            <ref role="1m5ApE" to="cewj:3Wmswgx0nyV" resolve="RobotJoint" />
                                             <node concept="37vLTw" id="6p7_7P90OSW" role="1m5AlR">
                                               <ref role="3cqZAo" node="6p7_7P90NeK" resolve="it" />
+                                            </node>
+                                            <node concept="chp4Y" id="44DwksjZ1_S" role="3oSUPX">
+                                              <ref role="cht4Q" to="cewj:3Wmswgx0nyV" resolve="RobotJoint" />
                                             </node>
                                           </node>
                                           <node concept="3TrEf2" id="6p7_7P90Q9L" role="2OqNvi">
@@ -827,7 +829,6 @@
                                 <ref role="ehGHo" to="cewj:3Wmswgx0nyV" resolve="RobotJoint" />
                               </node>
                               <node concept="1PxgMI" id="6p7_7P938CZ" role="33vP2m">
-                                <ref role="1m5ApE" to="cewj:3Wmswgx0nyV" resolve="RobotJoint" />
                                 <node concept="2OqwBi" id="6p7_7P917wL" role="1m5AlR">
                                   <node concept="37vLTw" id="6p7_7P915an" role="2Oq$k0">
                                     <ref role="3cqZAo" node="6p7_7P90IPi" resolve="joints" />
@@ -837,6 +838,9 @@
                                       <property role="3cmrfH" value="0" />
                                     </node>
                                   </node>
+                                </node>
+                                <node concept="chp4Y" id="44DwksjZ2Se" role="3oSUPX">
+                                  <ref role="cht4Q" to="cewj:3Wmswgx0nyV" resolve="RobotJoint" />
                                 </node>
                               </node>
                             </node>

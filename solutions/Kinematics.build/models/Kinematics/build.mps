@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -40,6 +40,7 @@
       </concept>
       <concept id="5617550519002745364" name="jetbrains.mps.build.structure.BuildLayout" flags="ng" index="1l3spV" />
       <concept id="5617550519002745363" name="jetbrains.mps.build.structure.BuildProject" flags="ng" index="1l3spW">
+        <property id="4915877860348071612" name="fileName" index="turDy" />
         <property id="5204048710541015587" name="internalBaseDirectory" index="2DA0ip" />
         <child id="6647099934206700656" name="plugins" index="10PD9s" />
         <child id="7389400916848080626" name="parts" index="3989C9" />
@@ -100,6 +101,7 @@
       <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
         <child id="4278635856200826394" name="path" index="1BurEY" />
       </concept>
+      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
@@ -116,6 +118,7 @@
   <node concept="1l3spW" id="2RDM3_ZXwQQ">
     <property role="TrG5h" value="Kinematics" />
     <property role="2DA0ip" value="../../" />
+    <property role="turDy" value="build-plugin-mps.xml" />
     <node concept="10PD9b" id="2RDM3_ZXwQR" role="10PD9s" />
     <node concept="3b7kt6" id="2RDM3_ZXwQS" role="10PD9s" />
     <node concept="398rNT" id="2RDM3_ZXwQT" role="1l3spd">
@@ -203,6 +206,9 @@
       <node concept="m$_yC" id="2RDM3_ZXwR9" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
+      <node concept="m$_yC" id="44Dwksk40xp" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
+      </node>
       <node concept="3_J27D" id="2RDM3_ZXwRa" role="m_cZH">
         <node concept="3Mxwew" id="2RDM3_ZXwRb" role="3MwsjC">
           <property role="3MwjfP" value="Kinematics" />
@@ -275,6 +281,35 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="44Dwksk3KEx" role="3bR37C">
+          <node concept="3bR9La" id="44Dwksk3KEy" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="44Dwksk40kY" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="Kinematics.build" />
+        <property role="3LESm3" value="e698fac9-be95-401f-abc7-69942a3f3953" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="44Dwksk40l1" role="3LF7KH">
+          <node concept="2Ry0Ak" id="44Dwksk40tL" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="44Dwksk40uy" role="2Ry0An">
+              <property role="2Ry0Am" value="Kinematics.build" />
+              <node concept="2Ry0Ak" id="44Dwksk40v5" role="2Ry0An">
+                <property role="2Ry0Am" value="Kinematics.build.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="44Dwksk40vm" role="3bR37C">
+          <node concept="3bR9La" id="44Dwksk40vn" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
           </node>
         </node>
       </node>

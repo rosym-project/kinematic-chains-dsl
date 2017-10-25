@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d6881f78-a85d-4c9e-931e-30879e67afdd" name="Kinematics" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports />
   <registry>
@@ -35,8 +35,8 @@
       </concept>
       <concept id="4545946235936274619" name="Kinematics.structure.RobotJoint" flags="ng" index="u5KEZ">
         <property id="4545946235936274654" name="type" index="u5KFq" />
-        <reference id="4545946235936281694" name="parent" index="u5Ypq" />
-        <reference id="4545946235936281697" name="child" index="u5Yp_" />
+        <reference id="4545946235936281694" name="parentLink" index="u5Ypq" />
+        <reference id="4545946235936281697" name="childLink" index="u5Yp_" />
         <child id="4545946235936281688" name="origin" index="u5Yps" />
         <child id="6177913345444074578" name="limit" index="3XUCWA" />
         <child id="6177913345444074586" name="safety_controller" index="3XUCWI" />
