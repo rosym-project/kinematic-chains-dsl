@@ -14,7 +14,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="f50ab0af-2037-4ab3-8fa4-8d24dc2e6a8a(Kinematics.sandbox)" version="0" />
-    <module reference="3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRT)" version="0" />
   </dependencyVersions>
 </solution>
 

@@ -1018,5 +1018,27 @@
       <ref role="20lvS9" node="6yo9VC25ChO" resolve="ControlMode" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4CS90qr$C20">
+    <property role="EcuMT" value="5348064168300937344" />
+    <property role="TrG5h" value="FileSystemPathAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="4CS90qr$CCW" role="1TKVEl">
+      <property role="IQ2nx" value="5348064168300939836" />
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="4CS90qr$CCo" role="lGtFl">
+      <property role="Hh88m" value="file_system_paths" />
+      <node concept="tn0Fv" id="4CS90qr$CCx" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+      <node concept="trNpa" id="4CS90qr$CDe" role="EQaZv">
+        <ref role="trN6q" node="3Wmswgx0nyU" resolve="RobotModel" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="4CS90qr$CCN" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
