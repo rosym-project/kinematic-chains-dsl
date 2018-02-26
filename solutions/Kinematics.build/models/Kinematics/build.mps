@@ -4,18 +4,42 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
   </imports>
   <registry>
+    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
+        <property id="6666499814681541920" name="text" index="2pMdty" />
+      </concept>
+      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
+        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <child id="6666499814681415861" name="attributes" index="2pNNFR" />
+        <child id="1622293396948928802" name="content" index="3o6s8t" />
+      </concept>
+      <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
+        <property id="6666499814681447926" name="attrName" index="2pNUuO" />
+        <child id="6666499814681541918" name="value" index="2pMdts" />
+      </concept>
+      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG">
+        <property id="1622293396948953704" name="value" index="3o6i5n" />
+      </concept>
+    </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
       <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
         <child id="9126048691955220762" name="path" index="28jJRO" />
       </concept>
+      <concept id="2755237150521975431" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithString" flags="ng" index="aVJcg">
+        <child id="2755237150521975437" name="value" index="aVJcq" />
+      </concept>
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
         <child id="7321017245477039051" name="compositePart" index="iGT6I" />
+      </concept>
+      <concept id="3767587139141066978" name="jetbrains.mps.build.structure.BuildVariableMacro" flags="ng" index="2kB4xC">
+        <child id="2755237150521975432" name="initialValue" index="aVJcv" />
       </concept>
       <concept id="4993211115183325728" name="jetbrains.mps.build.structure.BuildProjectDependency" flags="ng" index="2sgV4H">
         <reference id="5617550519002745380" name="script" index="1l3spb" />
@@ -55,6 +79,9 @@
       <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
         <property id="4903714810883755350" name="text" index="3MwjfP" />
       </concept>
+      <concept id="4903714810883702017" name="jetbrains.mps.build.structure.BuildVarRefStringPart" flags="ng" index="3Mxwey">
+        <reference id="4903714810883702018" name="macro" index="3Mxwex" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -71,6 +98,7 @@
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
+        <child id="1359186315025500371" name="xml" index="20twgj" />
         <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
@@ -123,6 +151,16 @@
     <node concept="3b7kt6" id="2RDM3_ZXwQS" role="10PD9s" />
     <node concept="398rNT" id="2RDM3_ZXwQT" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
+    </node>
+    <node concept="2kB4xC" id="27wsLp9JmP9" role="1l3spd">
+      <property role="TrG5h" value="current_version" />
+      <node concept="aVJcg" id="27wsLp9JmQp" role="aVJcv">
+        <node concept="NbPM2" id="27wsLp9JmQo" role="aVJcq">
+          <node concept="3Mxwew" id="27wsLp9JmQn" role="3MwsjC">
+            <property role="3MwjfP" value="1.0.0" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="2RDM3_ZXwQU" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
@@ -190,14 +228,47 @@
     </node>
     <node concept="m$_wf" id="2RDM3_ZXwR3" role="3989C9">
       <property role="m$_wk" value="Kinematics" />
+      <node concept="2pNNFK" id="3ddCaS_xAzO" role="20twgj">
+        <property role="2pNNFO" value="vendor" />
+        <node concept="2pNUuL" id="4J0OvZJgW_Q" role="2pNNFR">
+          <property role="2pNUuO" value="email" />
+          <node concept="2pMdtt" id="4J0OvZJgW_T" role="2pMdts">
+            <property role="2pMdty" value="dwigand@techfak.uni-bielefeld.de" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="4J0OvZJgW_Z" role="2pNNFR">
+          <property role="2pNUuO" value="url" />
+          <node concept="2pMdtt" id="4J0OvZJgWA6" role="2pMdts">
+            <property role="2pMdty" value="https://github.com/xwavex" />
+          </node>
+        </node>
+        <node concept="3o6iSG" id="3ddCaS_xA$L" role="3o6s8t">
+          <property role="3o6i5n" value="Dennis Leroy Wigand" />
+        </node>
+      </node>
+      <node concept="2pNNFK" id="7hyLc6Vva35" role="20twgj">
+        <property role="2pNNFO" value="idea-version" />
+        <node concept="2pNUuL" id="7hyLc6Vva36" role="2pNNFR">
+          <property role="2pNUuO" value="until-build" />
+          <node concept="2pMdtt" id="7hyLc6Vva37" role="2pMdts">
+            <property role="2pMdty" value="172.1347" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="7hyLc6Vva38" role="2pNNFR">
+          <property role="2pNUuO" value="since-build" />
+          <node concept="2pMdtt" id="7hyLc6Vva39" role="2pMdts">
+            <property role="2pMdty" value="172.1347" />
+          </node>
+        </node>
+      </node>
       <node concept="3_J27D" id="2RDM3_ZXwR4" role="m$_yQ">
         <node concept="3Mxwew" id="2RDM3_ZXwR5" role="3MwsjC">
           <property role="3MwjfP" value="Kinematics" />
         </node>
       </node>
       <node concept="3_J27D" id="2RDM3_ZXwR6" role="m$_w8">
-        <node concept="3Mxwew" id="2RDM3_ZXwR7" role="3MwsjC">
-          <property role="3MwjfP" value="1.0.0" />
+        <node concept="3Mxwey" id="3eFKsYHX3$m" role="3MwsjC">
+          <ref role="3Mxwex" node="27wsLp9JmP9" resolve="current_version" />
         </node>
       </node>
       <node concept="m$f5U" id="2RDM3_ZXwR8" role="m$_yh">
@@ -215,7 +286,7 @@
         </node>
       </node>
       <node concept="2iUeEo" id="2YcwOqcDAoo" role="2iVFfd">
-        <property role="2iUeEt" value="Dennis Leroy Wigand (Bielefeld University)" />
+        <property role="2iUeEt" value="Dennis Leroy Wigand" />
         <property role="2iUeEu" value="https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=46595843" />
       </node>
       <node concept="3_J27D" id="2YcwOqcDAs_" role="3s6cr7">
@@ -227,7 +298,7 @@
     <node concept="2G$12M" id="2RDM3_ZXwR2" role="3989C9">
       <property role="TrG5h" value="Kinematics" />
       <node concept="1E1JtD" id="2RDM3_ZXwR1" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="Kinematics" />
         <property role="3LESm3" value="d6881f78-a85d-4c9e-931e-30879e67afdd" />
         <property role="2GAjPV" value="false" />
