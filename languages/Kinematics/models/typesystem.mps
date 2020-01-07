@@ -62,13 +62,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -91,9 +91,8 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="6973815483243445083" name="jetbrains.mps.lang.smodel.structure.EnumMemberValueRefExpression" flags="nn" index="3f7Wdw">
-        <reference id="6973815483243565416" name="member" index="3f7u_j" />
-        <reference id="6973815483243564601" name="enum" index="3f7vo2" />
+      <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
+        <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -101,6 +100,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
+        <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1062,12 +1064,12 @@
         <node concept="3clFbS" id="5mWmRiClHpS" role="3clFbx">
           <node concept="3clFbJ" id="5mWmRiClMik" role="3cqZAp">
             <node concept="3clFbS" id="5mWmRiClMim" role="3clFbx">
-              <node concept="2MkqsV" id="5mWmRiClNqk" role="3cqZAp">
-                <node concept="Xl_RD" id="5mWmRiClNqw" role="2MkJ7o">
-                  <property role="Xl_RC" value="Joint Type is revolute, hence limit cannot be null" />
-                </node>
-                <node concept="1YBJjd" id="5mWmRiCmdjC" role="2OEOjV">
+              <node concept="2MkqsV" id="425YjngPnti" role="3cqZAp">
+                <node concept="1YBJjd" id="425YjngPnt$" role="1urrMF">
                   <ref role="1YBMHb" node="5mWmRiClHpM" resolve="robotJoint" />
+                </node>
+                <node concept="Xl_RD" id="425YjngPnuU" role="2MkJ7o">
+                  <property role="Xl_RC" value="Joint Type is revolute, hence limit cannot be null" />
                 </node>
               </node>
             </node>
@@ -1076,31 +1078,30 @@
                 <node concept="1YBJjd" id="5mWmRiClHq2" role="2Oq$k0">
                   <ref role="1YBMHb" node="5mWmRiClHpM" resolve="robotJoint" />
                 </node>
-                <node concept="3TrcHB" id="5mWmRiClHCZ" role="2OqNvi">
-                  <ref role="3TsBF5" to="cewj:3Wmswgx0nzu" resolve="type" />
+                <node concept="3TrcHB" id="425YjngPkR8" role="2OqNvi">
+                  <ref role="3TsBF5" to="cewj:425YjngOn4C" resolve="type" />
                 </node>
               </node>
               <node concept="liA8E" id="5mWmRiCow_0" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                <node concept="2OqwBi" id="5mWmRiCowNr" role="37wK5m">
-                  <node concept="3f7Wdw" id="5mWmRiClIV_" role="2Oq$k0">
-                    <ref role="3f7u_j" to="cewj:3Wmswgx0nz4" />
-                    <ref role="3f7vo2" to="cewj:3Wmswgx0nz3" resolve="RobotJointType" />
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="425YjngPnfh" role="37wK5m">
+                  <node concept="1XH99k" id="425YjngPmL2" role="2Oq$k0">
+                    <ref role="1XH99l" to="cewj:425YjngOn4b" resolve="RobotJointType" />
                   </node>
-                  <node concept="liA8E" id="5mWmRiCox58" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.toString():java.lang.String" resolve="toString" />
+                  <node concept="2ViDtV" id="425YjngPnsz" role="2OqNvi">
+                    <ref role="2ViDtZ" to="cewj:425YjngOn4d" resolve="revolute" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="3eNFk2" id="5mWmRiClMpo" role="3eNLev">
               <node concept="3clFbS" id="5mWmRiClMpq" role="3eOfB_">
-                <node concept="2MkqsV" id="5mWmRiCmdkd" role="3cqZAp">
-                  <node concept="Xl_RD" id="5mWmRiCmdke" role="2MkJ7o">
-                    <property role="Xl_RC" value="Joint Type is prismatic, hence limit cannot be null" />
-                  </node>
-                  <node concept="1YBJjd" id="5mWmRiCmdkf" role="2OEOjV">
+                <node concept="2MkqsV" id="425YjngPnCt" role="3cqZAp">
+                  <node concept="1YBJjd" id="425YjngPnCu" role="1urrMF">
                     <ref role="1YBMHb" node="5mWmRiClHpM" resolve="robotJoint" />
+                  </node>
+                  <node concept="Xl_RD" id="425YjngPnCN" role="2MkJ7o">
+                    <property role="Xl_RC" value="Joint Type is prismatic, hence limit cannot be null" />
                   </node>
                 </node>
               </node>
@@ -1109,15 +1110,19 @@
                   <node concept="1YBJjd" id="5mWmRiClJhE" role="2Oq$k0">
                     <ref role="1YBMHb" node="5mWmRiClHpM" resolve="robotJoint" />
                   </node>
-                  <node concept="3TrcHB" id="5mWmRiClJG8" role="2OqNvi">
-                    <ref role="3TsBF5" to="cewj:3Wmswgx0nzu" resolve="type" />
+                  <node concept="3TrcHB" id="425YjngPl2x" role="2OqNvi">
+                    <ref role="3TsBF5" to="cewj:425YjngOn4C" resolve="type" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5mWmRiCo$sR" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                  <node concept="3f7Wdw" id="5mWmRiClK9e" role="37wK5m">
-                    <ref role="3f7u_j" to="cewj:3Wmswgx0nz8" />
-                    <ref role="3f7vo2" to="cewj:3Wmswgx0nz3" resolve="RobotJointType" />
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                  <node concept="2OqwBi" id="425YjngPm$6" role="37wK5m">
+                    <node concept="1XH99k" id="425YjngPmbg" role="2Oq$k0">
+                      <ref role="1XH99l" to="cewj:425YjngOn4b" resolve="RobotJointType" />
+                    </node>
+                    <node concept="2ViDtV" id="425YjngPmHk" role="2OqNvi">
+                      <ref role="2ViDtZ" to="cewj:425YjngOn4f" resolve="prismatic" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1191,12 +1196,12 @@
           </node>
         </node>
         <node concept="3clFbS" id="6p7_7P94Pp2" role="3clFbx">
-          <node concept="2MkqsV" id="6p7_7P94R5t" role="3cqZAp">
-            <node concept="Xl_RD" id="6p7_7P94R7f" role="2MkJ7o">
-              <property role="Xl_RC" value="Base and tip link do not create a valid chain!" />
-            </node>
-            <node concept="1YBJjd" id="6p7_7P94R6m" role="2OEOjV">
+          <node concept="2MkqsV" id="425YjngPkke" role="3cqZAp">
+            <node concept="1YBJjd" id="425YjngPkkw" role="1urrMF">
               <ref role="1YBMHb" node="6p7_7P94PlK" resolve="kinematicChain" />
+            </node>
+            <node concept="Xl_RD" id="425YjngPklP" role="2MkJ7o">
+              <property role="Xl_RC" value="Base and tip link do not create a valid chain!" />
             </node>
           </node>
         </node>
@@ -1238,12 +1243,12 @@
               <node concept="3w_OXm" id="6Q1aqFNMzib" role="2OqNvi" />
             </node>
             <node concept="3clFbS" id="6Q1aqFNMxYp" role="3clFbx">
-              <node concept="2MkqsV" id="6Q1aqFNMzl2" role="3cqZAp">
-                <node concept="Xl_RD" id="6Q1aqFNMzlM" role="2MkJ7o">
-                  <property role="Xl_RC" value="Virtual Control Modes need to be based on an existing Control Mode!" />
-                </node>
-                <node concept="1YBJjd" id="6Q1aqFNMzm9" role="2OEOjV">
+              <node concept="2MkqsV" id="425YjngPjR2" role="3cqZAp">
+                <node concept="1YBJjd" id="425YjngPjRk" role="1urrMF">
                   <ref role="1YBMHb" node="6Q1aqFNMwDu" resolve="controlMode" />
+                </node>
+                <node concept="Xl_RD" id="425YjngPjSx" role="2MkJ7o">
+                  <property role="Xl_RC" value="Virtual Control Modes need to be based on an existing Control Mode!" />
                 </node>
               </node>
             </node>

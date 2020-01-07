@@ -2,7 +2,7 @@
 <model ref="r:5196cc44-1117-47bf-99e4-b0351132c090(Kinematics.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -43,12 +43,6 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -80,13 +74,22 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -162,11 +165,6 @@
           </node>
           <node concept="9aQIb" id="5mWmRiCpqO2" role="9aQIa">
             <node concept="3clFbS" id="5mWmRiCpqO3" role="9aQI4">
-              <node concept="3SKdUt" id="44DwksjZ4Qo" role="3cqZAp">
-                <node concept="3SKdUq" id="44DwksjZ4Qq" role="3SKWNk">
-                  <property role="3SKdUp" value="this may be wrong after migtayion delete is not an option anymore..." />
-                </node>
-              </node>
               <node concept="3clFbF" id="5mWmRiCpqSJ" role="3cqZAp">
                 <node concept="2OqwBi" id="5mWmRiCprkR" role="3clFbG">
                   <node concept="2OqwBi" id="5mWmRiCpqZD" role="2Oq$k0">
@@ -179,6 +177,23 @@
                   </node>
                   <node concept="2oxUTD" id="44DwksjZ4Jc" role="2OqNvi">
                     <node concept="10Nm6u" id="44DwksjZ4NG" role="2oxUTC" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1X3_iC" id="425YjngOriK" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbF" id="425YjngOqi$" role="8Wnug">
+                  <node concept="2OqwBi" id="425YjngOqJx" role="3clFbG">
+                    <node concept="2OqwBi" id="425YjngOqrt" role="2Oq$k0">
+                      <node concept="2Sf5sV" id="425YjngOqiy" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="425YjngOq$l" role="2OqNvi">
+                        <node concept="3CFYIy" id="425YjngOqAx" role="3CFYIz">
+                          <ref role="3CFYIx" to="cewj:5mWmRiCoH$L" resolve="AttachableComment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3YRAZt" id="425YjngOrfI" role="2OqNvi" />
                   </node>
                 </node>
               </node>

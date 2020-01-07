@@ -2,8 +2,8 @@
 <model ref="r:1abb0f48-bb1c-4d87-8ebc-ec04966a77d9(Kinematics.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="d6881f78-a85d-4c9e-931e-30879e67afdd" name="Kinematics" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="d6881f78-a85d-4c9e-931e-30879e67afdd" name="Kinematics" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports />
   <registry>
@@ -1280,7 +1280,7 @@
     </node>
     <node concept="u5KEZ" id="4dYyq9PNs4D" role="3XQLF5">
       <property role="TrG5h" value="arm_world_joint" />
-      <property role="u5KFq" value="fixed" />
+      <property role="u5KFq" value="3Wmswgx0nzc/fixed" />
       <ref role="u5Yp_" node="4dYyq9PNrX1" resolve="lwr_arm_base_link" />
       <ref role="u5Ypq" node="4dYyq9PNrX0" resolve="world" />
       <node concept="u5KF$" id="4dYyq9PNs4E" role="u5Yps">
@@ -1306,7 +1306,6 @@
     </node>
     <node concept="u5KEZ" id="4dYyq9PNs4R" role="3XQLF5">
       <property role="TrG5h" value="lwr_arm_0_joint" />
-      <property role="u5KFq" value="revolute" />
       <ref role="u5Yp_" node="4dYyq9PNrXY" resolve="lwr_arm_1_link" />
       <ref role="u5Ypq" node="4dYyq9PNrX1" resolve="lwr_arm_base_link" />
       <node concept="u5KF$" id="4dYyq9PNs4S" role="u5Yps">
@@ -1379,7 +1378,6 @@
     </node>
     <node concept="u5KEZ" id="4dYyq9PNs5v" role="3XQLF5">
       <property role="TrG5h" value="lwr_arm_1_joint" />
-      <property role="u5KFq" value="revolute" />
       <ref role="u5Yp_" node="4dYyq9PNrYV" resolve="lwr_arm_2_link" />
       <ref role="u5Ypq" node="4dYyq9PNrXY" resolve="lwr_arm_1_link" />
       <node concept="u5KF$" id="4dYyq9PNs5w" role="u5Yps">
@@ -1452,7 +1450,6 @@
     </node>
     <node concept="u5KEZ" id="4dYyq9PNs67" role="3XQLF5">
       <property role="TrG5h" value="lwr_arm_2_joint" />
-      <property role="u5KFq" value="revolute" />
       <ref role="u5Yp_" node="4dYyq9PNrZS" resolve="lwr_arm_3_link" />
       <ref role="u5Ypq" node="4dYyq9PNrYV" resolve="lwr_arm_2_link" />
       <node concept="u5KF$" id="4dYyq9PNs68" role="u5Yps">
@@ -1525,7 +1522,6 @@
     </node>
     <node concept="u5KEZ" id="4dYyq9PNs6J" role="3XQLF5">
       <property role="TrG5h" value="lwr_arm_3_joint" />
-      <property role="u5KFq" value="revolute" />
       <ref role="u5Yp_" node="4dYyq9PNs0P" resolve="lwr_arm_4_link" />
       <ref role="u5Ypq" node="4dYyq9PNrZS" resolve="lwr_arm_3_link" />
       <node concept="u5KF$" id="4dYyq9PNs6K" role="u5Yps">
@@ -1598,7 +1594,6 @@
     </node>
     <node concept="u5KEZ" id="4dYyq9PNs7n" role="3XQLF5">
       <property role="TrG5h" value="lwr_arm_4_joint" />
-      <property role="u5KFq" value="revolute" />
       <ref role="u5Yp_" node="4dYyq9PNs1M" resolve="lwr_arm_5_link" />
       <ref role="u5Ypq" node="4dYyq9PNs0P" resolve="lwr_arm_4_link" />
       <node concept="u5KF$" id="4dYyq9PNs7o" role="u5Yps">
@@ -1671,7 +1666,6 @@
     </node>
     <node concept="u5KEZ" id="4dYyq9PNs7Z" role="3XQLF5">
       <property role="TrG5h" value="lwr_arm_5_joint" />
-      <property role="u5KFq" value="revolute" />
       <ref role="u5Yp_" node="4dYyq9PNs2J" resolve="lwr_arm_6_link" />
       <ref role="u5Ypq" node="4dYyq9PNs1M" resolve="lwr_arm_5_link" />
       <node concept="u5KF$" id="4dYyq9PNs80" role="u5Yps">
@@ -1744,7 +1738,6 @@
     </node>
     <node concept="u5KEZ" id="4dYyq9PNs8B" role="3XQLF5">
       <property role="TrG5h" value="lwr_arm_6_joint" />
-      <property role="u5KFq" value="revolute" />
       <ref role="u5Yp_" node="4dYyq9PNs3G" resolve="lwr_arm_7_link" />
       <ref role="u5Ypq" node="4dYyq9PNs2J" resolve="lwr_arm_6_link" />
       <node concept="u5KF$" id="4dYyq9PNs8C" role="u5Yps">

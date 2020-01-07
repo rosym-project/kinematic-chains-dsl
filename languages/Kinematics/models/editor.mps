@@ -2,7 +2,7 @@
 <model ref="r:4f38c9dc-6fbd-47e0-b9aa-3bcea73b4cc8(Kinematics.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -856,7 +856,7 @@
             <property role="3F0ifm" value="Type:" />
           </node>
           <node concept="3F0A7n" id="5mWmRiCo3cY" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:3Wmswgx0nzu" resolve="type" />
+            <ref role="1NtTu8" to="cewj:425YjngOn4C" resolve="type" />
           </node>
           <node concept="2iRfu4" id="5mWmRiCo3cl" role="2iSdaV" />
         </node>
@@ -1244,13 +1244,13 @@
       <node concept="3F0ifn" id="5mWmRiCptzT" role="3EZMnx">
         <property role="3F0ifm" value="&lt;-- " />
         <node concept="VechU" id="5mWmRiCpHYZ" role="3F10Kt">
-          <property role="Vb096" value="LIGHT_BLUE" />
+          <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
       </node>
       <node concept="3F0A7n" id="5mWmRiCp32m" role="3EZMnx">
         <ref role="1NtTu8" to="cewj:5mWmRiCp31R" resolve="comment" />
         <node concept="VechU" id="5mWmRiCpHYW" role="3F10Kt">
-          <property role="Vb096" value="LIGHT_BLUE" />
+          <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
       </node>
       <node concept="3F0ifn" id="5mWmRiCpt$7" role="3EZMnx">
@@ -1259,7 +1259,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="VechU" id="5mWmRiCpBR4" role="3F10Kt">
-          <property role="Vb096" value="LIGHT_BLUE" />
+          <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
       </node>
       <node concept="2SsqMj" id="5mWmRiCp32w" role="3EZMnx">
