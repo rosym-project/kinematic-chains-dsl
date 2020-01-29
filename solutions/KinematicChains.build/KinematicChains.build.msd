@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Kinematics.build" uuid="e698fac9-be95-401f-abc7-69942a3f3953" moduleVersion="0" compileInMPS="true">
+<solution name="KinematicChains.build" uuid="e698fac9-be95-401f-abc7-69942a3f3953" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -22,7 +22,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="e698fac9-be95-401f-abc7-69942a3f3953(Kinematics.build)" version="0" />
+    <module reference="e698fac9-be95-401f-abc7-69942a3f3953(KinematicChains.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
   </dependencyVersions>
 </solution>

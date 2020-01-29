@@ -2,9 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/Kinematics/Kinematics.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/Kinematics/sandbox/Kinematics.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/Kinematics.build/Kinematics.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/KinematicChains/KinematicChains.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/KinematicChains.build/KinematicChains.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/KinematicChains.sandbox/KinematicChains.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>

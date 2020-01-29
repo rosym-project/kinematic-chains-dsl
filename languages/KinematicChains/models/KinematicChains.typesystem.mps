@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:08409190-8f33-4b20-a01a-ed5788f61dfb(Kinematics.typesystem)">
+<model ref="r:08409190-8f33-4b20-a01a-ed5788f61dfb(KinematicChains.typesystem)">
   <persistence version="9" />
   <languages>
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
-    <import index="cewj" ref="r:cd13618c-02ad-4af8-a3e4-3414c58c4613(Kinematics.structure)" implicit="true" />
+    <import index="cewj" ref="r:cd13618c-02ad-4af8-a3e4-3414c58c4613(KinematicChains.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="3n2x" ref="r:508cb62d-392f-4e80-8340-a4df853548eb(Kinematics.behavior)" implicit="true" />
+    <import index="3n2x" ref="r:508cb62d-392f-4e80-8340-a4df853548eb(KinematicChains.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">

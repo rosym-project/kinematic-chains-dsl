@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:cd13618c-02ad-4af8-a3e4-3414c58c4613(Kinematics.structure)">
+<model ref="r:cd13618c-02ad-4af8-a3e4-3414c58c4613(KinematicChains.structure)">
   <persistence version="9" />
   <languages>
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
