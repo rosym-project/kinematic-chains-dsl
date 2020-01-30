@@ -2,7 +2,7 @@
 <model ref="r:1abb0f48-bb1c-4d87-8ebc-ec04966a77d9(KinematicChains.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="d6881f78-a85d-4c9e-931e-30879e67afdd" name="Kinematics" version="2" />
+    <use id="d6881f78-a85d-4c9e-931e-30879e67afdd" name="KinematicChains" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports />
@@ -20,20 +20,17 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="d6881f78-a85d-4c9e-931e-30879e67afdd" name="Kinematics">
-      <concept id="4545946235936274620" name="Kinematics.structure.RobotLink" flags="ng" index="u5KES">
+    <language id="d6881f78-a85d-4c9e-931e-30879e67afdd" name="KinematicChains">
+      <concept id="4545946235936274620" name="KinematicChains.structure.RobotLink" flags="ng" index="u5KES">
         <child id="4545946235936281751" name="interial" index="u5Yqj" />
         <child id="6177913345444018045" name="collision" index="3XUqK9" />
-        <child id="6177913345444018041" name="visual" index="3XUqKd" />
       </concept>
-      <concept id="4545946235936274618" name="Kinematics.structure.RobotModel" flags="ng" index="u5KEY">
+      <concept id="4545946235936274618" name="KinematicChains.structure.RobotModel" flags="ng" index="u5KEY">
         <child id="4545946235936281753" name="origin" index="u5Yqt" />
         <child id="4863475978456558343" name="transmissions" index="QWIa_" />
-        <child id="4863475978456558348" name="gazebos" index="QWIaI" />
         <child id="6177913345445151153" name="jointsAndLinks" index="3XQLF5" />
-        <child id="6177913345444559993" name="materials" index="3XSAsd" />
       </concept>
-      <concept id="4545946235936274619" name="Kinematics.structure.RobotJoint" flags="ng" index="u5KEZ">
+      <concept id="4545946235936274619" name="KinematicChains.structure.RobotJoint" flags="ng" index="u5KEZ">
         <property id="4545946235936274654" name="type" index="u5KFq" />
         <reference id="4545946235936281694" name="parentLink" index="u5Ypq" />
         <reference id="4545946235936281697" name="childLink" index="u5Yp_" />
@@ -43,7 +40,7 @@
         <child id="6177913345444074560" name="axis" index="3XUCWO" />
         <child id="6177913345444074571" name="dynamics" index="3XUCWZ" />
       </concept>
-      <concept id="4545946235936274656" name="Kinematics.structure.Origin" flags="ng" index="u5KF$">
+      <concept id="4545946235936274656" name="KinematicChains.structure.Origin" flags="ng" index="u5KF$">
         <child id="6177913345443866977" name="Pz" index="3XVZ8l" />
         <child id="6177913345443866966" name="Px" index="3XVZ8y" />
         <child id="6177913345443866962" name="Ry" index="3XVZ8A" />
@@ -51,7 +48,7 @@
         <child id="6177913345443866957" name="Rr" index="3XVZ8T" />
         <child id="6177913345443866959" name="Rp" index="3XVZ8V" />
       </concept>
-      <concept id="4545946235936281706" name="Kinematics.structure.RobotLinkInertial" flags="ng" index="u5YpI">
+      <concept id="4545946235936281706" name="KinematicChains.structure.RobotLinkInertial" flags="ng" index="u5YpI">
         <child id="4545946235936281707" name="origin" index="u5YpJ" />
         <child id="6177913345443970992" name="iyz" index="3XUmj4" />
         <child id="6177913345443971001" name="izz" index="3XUmjd" />
@@ -61,232 +58,51 @@
         <child id="6177913345443970971" name="ixy" index="3XUmjJ" />
         <child id="6177913345443970959" name="mass" index="3XUmjV" />
       </concept>
-      <concept id="6177913345444492894" name="Kinematics.structure.RobotLinkMaterialRef" flags="ng" index="3XSmOE">
-        <reference id="6177913345444492897" name="material" index="3XSmOl" />
-      </concept>
-      <concept id="6177913345444520398" name="Kinematics.structure.RobotMaterial" flags="ng" index="3XSvEU">
-        <child id="4863475978444211276" name="robotColor" index="RFCRI" />
-      </concept>
-      <concept id="6177913345444238929" name="Kinematics.structure.RobotGazeboImplicitSpringDamber" flags="ng" index="3XTgO_">
-        <property id="6177913345444238930" name="active" index="3XTgOA" />
-      </concept>
-      <concept id="6177913345444238901" name="Kinematics.structure.RobotGazeboProvideFeedback" flags="ng" index="3XTgP1">
-        <property id="6177913345444238902" name="active" index="3XTgP2" />
-      </concept>
-      <concept id="6177913345444238896" name="Kinematics.structure.RobotGazebo" flags="ng" index="3XTgP4">
-        <reference id="6177913345444238899" name="reference" index="3XTgP7" />
-        <child id="6177913345444238964" name="implicitSpringDamper" index="3XTgO0" />
-        <child id="6177913345444238961" name="provideFeedback" index="3XTgO5" />
-      </concept>
-      <concept id="6177913345444274702" name="Kinematics.structure.RobotTransmissionActuator" flags="ng" index="3XTr_U" />
-      <concept id="6177913345444274699" name="Kinematics.structure.RobotTransmission" flags="ng" index="3XTr_Z">
+      <concept id="6177913345444274702" name="KinematicChains.structure.RobotTransmissionActuator" flags="ng" index="3XTr_U" />
+      <concept id="6177913345444274699" name="KinematicChains.structure.RobotTransmission" flags="ng" index="3XTr_Z">
         <reference id="6177913345444274738" name="joint" index="3XTr_6" />
         <child id="6177913345444833724" name="name" index="3XRzb8" />
         <child id="6177913345444274733" name="actuator" index="3XTr_p" />
         <child id="6177913345444274735" name="mechanicalReduction" index="3XTr_r" />
       </concept>
-      <concept id="6177913345444018044" name="Kinematics.structure.RobotLinkCollision" flags="ng" index="3XUqK8">
+      <concept id="6177913345444018044" name="KinematicChains.structure.RobotLinkCollision" flags="ng" index="3XUqK8">
         <child id="6177913345444018053" name="geometry" index="3XUqNL" />
         <child id="6177913345444018051" name="origin" index="3XUqNR" />
       </concept>
-      <concept id="6177913345443997806" name="Kinematics.structure.GeometryMesh" flags="ng" index="3XUvcq">
+      <concept id="6177913345443997806" name="KinematicChains.structure.GeometryMesh" flags="ng" index="3XUvcq">
         <property id="6177913345443997818" name="filename" index="3XUvce" />
         <child id="6177913345443997814" name="scaleZ" index="3XUvc2" />
         <child id="6177913345443997809" name="scaleX" index="3XUvc5" />
         <child id="6177913345443997811" name="scaleY" index="3XUvc7" />
       </concept>
-      <concept id="6177913345444044740" name="Kinematics.structure.RobotJointDynamics" flags="ng" index="3XUwiK">
+      <concept id="6177913345444044740" name="KinematicChains.structure.RobotJointDynamics" flags="ng" index="3XUwiK">
         <child id="6177913345444044741" name="damping" index="3XUwiL" />
         <child id="6177913345444044743" name="friction" index="3XUwiN" />
       </concept>
-      <concept id="6177913345444051234" name="Kinematics.structure.RobotJointLimit" flags="ng" index="3XUy9m">
+      <concept id="6177913345444051234" name="KinematicChains.structure.RobotJointLimit" flags="ng" index="3XUy9m">
         <child id="6177913345444051237" name="lower" index="3XUy9h" />
         <child id="6177913345444051235" name="effort" index="3XUy9n" />
         <child id="6177913345444051244" name="velocity" index="3XUy9o" />
         <child id="6177913345444051240" name="upper" index="3XUy9s" />
       </concept>
-      <concept id="6177913345444033029" name="Kinematics.structure.RobotJointAxis" flags="ng" index="3XUA_L">
+      <concept id="6177913345444033029" name="KinematicChains.structure.RobotJointAxis" flags="ng" index="3XUA_L">
         <child id="6177913345444033030" name="aX" index="3XUA_M" />
         <child id="6177913345444033032" name="aY" index="3XUA_W" />
         <child id="6177913345444033035" name="aZ" index="3XUA_Z" />
       </concept>
-      <concept id="6177913345444061156" name="Kinematics.structure.RobotJointSafetyController" flags="ng" index="3XUGig">
+      <concept id="6177913345444061156" name="KinematicChains.structure.RobotJointSafetyController" flags="ng" index="3XUGig">
         <child id="6177913345444061157" name="soft_lower_limit" index="3XUGih" />
         <child id="6177913345444061159" name="soft_upper_limit" index="3XUGij" />
         <child id="6177913345444061166" name="k_velocity" index="3XUGiq" />
         <child id="6177913345444061162" name="k_position" index="3XUGiu" />
       </concept>
-      <concept id="6177913345443846198" name="Kinematics.structure.RobotLinkGeometry" flags="ng" index="3XVKd2">
+      <concept id="6177913345443846198" name="KinematicChains.structure.RobotLinkGeometry" flags="ng" index="3XVKd2">
         <child id="6177913345444018056" name="geometry" index="3XUqNW" />
-      </concept>
-      <concept id="6177913345443846194" name="Kinematics.structure.RobotLinkVisual" flags="ng" index="3XVKd6">
-        <child id="6177913345444018037" name="material" index="3XUqK1" />
-        <child id="6177913345444018034" name="geometry" index="3XUqK6" />
-        <child id="6177913345443846195" name="origin" index="3XVKd7" />
-      </concept>
-      <concept id="6177913345443846201" name="Kinematics.structure.RobotColor" flags="ng" index="3XVKdd">
-        <child id="6177913345443846228" name="a" index="3XVKcw" />
-        <child id="6177913345443846224" name="b" index="3XVKc$" />
-        <child id="6177913345443846221" name="g" index="3XVKcT" />
-        <child id="6177913345443846219" name="r" index="3XVKcZ" />
       </concept>
     </language>
   </registry>
   <node concept="u5KEY" id="4dYyq9PNrVW">
     <property role="TrG5h" value="kuka-lwr" />
-    <node concept="3XSvEU" id="4dYyq9PNrVX" role="3XSAsd">
-      <property role="TrG5h" value="DarkGrey" />
-      <node concept="3XVKdd" id="4dYyq9PNrVY" role="RFCRI">
-        <node concept="3b6qkQ" id="4dYyq9PNrVZ" role="3XVKcZ">
-          <property role="$nhwW" value="0.3" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrW0" role="3XVKcT">
-          <property role="$nhwW" value="0.3" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrW1" role="3XVKc$">
-          <property role="$nhwW" value="0.3" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrW2" role="3XVKcw">
-          <property role="$nhwW" value="1.0" />
-        </node>
-      </node>
-    </node>
-    <node concept="3XSvEU" id="4dYyq9PNrW3" role="3XSAsd">
-      <property role="TrG5h" value="Red" />
-      <node concept="3XVKdd" id="4dYyq9PNrW4" role="RFCRI">
-        <node concept="3b6qkQ" id="4dYyq9PNrW5" role="3XVKcZ">
-          <property role="$nhwW" value="0.3" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrW6" role="3XVKcT">
-          <property role="$nhwW" value="0.3" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrW7" role="3XVKc$">
-          <property role="$nhwW" value="0.3" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrW8" role="3XVKcw">
-          <property role="$nhwW" value="1.0" />
-        </node>
-      </node>
-    </node>
-    <node concept="3XSvEU" id="4dYyq9PNrW9" role="3XSAsd">
-      <property role="TrG5h" value="Black" />
-      <node concept="3XVKdd" id="4dYyq9PNrWa" role="RFCRI">
-        <node concept="3b6qkQ" id="4dYyq9PNrWb" role="3XVKcZ">
-          <property role="$nhwW" value="0.0" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWc" role="3XVKcT">
-          <property role="$nhwW" value="0.0" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWd" role="3XVKc$">
-          <property role="$nhwW" value="0.0" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWe" role="3XVKcw">
-          <property role="$nhwW" value="1.0" />
-        </node>
-      </node>
-    </node>
-    <node concept="3XSvEU" id="4dYyq9PNrWf" role="3XSAsd">
-      <property role="TrG5h" value="Orange" />
-      <node concept="3XVKdd" id="4dYyq9PNrWg" role="RFCRI">
-        <node concept="3b6qkQ" id="4dYyq9PNrWh" role="3XVKcZ">
-          <property role="$nhwW" value="1.0" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWi" role="3XVKcT">
-          <property role="$nhwW" value="0.487" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWj" role="3XVKc$">
-          <property role="$nhwW" value="0.0" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWk" role="3XVKcw">
-          <property role="$nhwW" value="1.0" />
-        </node>
-      </node>
-    </node>
-    <node concept="3XSvEU" id="4dYyq9PNrWl" role="3XSAsd">
-      <property role="TrG5h" value="Silver" />
-      <node concept="3XVKdd" id="4dYyq9PNrWm" role="RFCRI">
-        <node concept="3b6qkQ" id="4dYyq9PNrWn" role="3XVKcZ">
-          <property role="$nhwW" value="1.0" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWo" role="3XVKcT">
-          <property role="$nhwW" value="1.0" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWp" role="3XVKc$">
-          <property role="$nhwW" value="1.0" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWq" role="3XVKcw">
-          <property role="$nhwW" value="1.0" />
-        </node>
-      </node>
-    </node>
-    <node concept="3XSvEU" id="4dYyq9PNrWr" role="3XSAsd">
-      <property role="TrG5h" value="Grey" />
-      <node concept="3XVKdd" id="4dYyq9PNrWs" role="RFCRI">
-        <node concept="3b6qkQ" id="4dYyq9PNrWt" role="3XVKcZ">
-          <property role="$nhwW" value="0.7" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWu" role="3XVKcT">
-          <property role="$nhwW" value="0.7" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWv" role="3XVKc$">
-          <property role="$nhwW" value="0.7" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWw" role="3XVKcw">
-          <property role="$nhwW" value="1.0" />
-        </node>
-      </node>
-    </node>
-    <node concept="3XSvEU" id="4dYyq9PNrWx" role="3XSAsd">
-      <property role="TrG5h" value="Blue" />
-      <node concept="3XVKdd" id="4dYyq9PNrWy" role="RFCRI">
-        <node concept="3b6qkQ" id="4dYyq9PNrWz" role="3XVKcZ">
-          <property role="$nhwW" value="0.0" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrW$" role="3XVKcT">
-          <property role="$nhwW" value="0.0" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrW_" role="3XVKc$">
-          <property role="$nhwW" value="0.8" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWA" role="3XVKcw">
-          <property role="$nhwW" value="1.0" />
-        </node>
-      </node>
-    </node>
-    <node concept="3XSvEU" id="4dYyq9PNrWB" role="3XSAsd">
-      <property role="TrG5h" value="HandGray" />
-      <node concept="3XVKdd" id="4dYyq9PNrWC" role="RFCRI">
-        <node concept="3b6qkQ" id="4dYyq9PNrWD" role="3XVKcZ">
-          <property role="$nhwW" value="0.953" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWE" role="3XVKcT">
-          <property role="$nhwW" value="0.996" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWF" role="3XVKc$">
-          <property role="$nhwW" value="0.694" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWG" role="3XVKcw">
-          <property role="$nhwW" value="1.0" />
-        </node>
-      </node>
-    </node>
-    <node concept="3XSvEU" id="4dYyq9PNrWH" role="3XSAsd">
-      <property role="TrG5h" value="SickBlue" />
-      <node concept="3XVKdd" id="4dYyq9PNrWI" role="RFCRI">
-        <node concept="3b6qkQ" id="4dYyq9PNrWJ" role="3XVKcZ">
-          <property role="$nhwW" value="0.3058" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWK" role="3XVKcT">
-          <property role="$nhwW" value="0.5921" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWL" role="3XVKc$">
-          <property role="$nhwW" value="0.7294" />
-        </node>
-        <node concept="3b6qkQ" id="4dYyq9PNrWM" role="3XVKcw">
-          <property role="$nhwW" value="1.0" />
-        </node>
-      </node>
-    </node>
     <node concept="u5KF$" id="4dYyq9PNrWN" role="u5Yqt">
       <node concept="3b6qkQ" id="4dYyq9PNrWU" role="3XVZ8y">
         <property role="$nhwW" value="0.0" />
@@ -353,45 +169,6 @@
         </node>
         <node concept="3b6qkQ" id="4dYyq9PNrXm" role="3XUmjd">
           <property role="$nhwW" value="0.00229" />
-        </node>
-      </node>
-      <node concept="3XVKd6" id="4dYyq9PNrXn" role="3XUqKd">
-        <node concept="u5KF$" id="4dYyq9PNrXo" role="3XVKd7">
-          <node concept="3b6qkQ" id="4dYyq9PNrXv" role="3XVZ8y">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrXw" role="3XVZ8J">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrXx" role="3XVZ8l">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrXy" role="3XVZ8T">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrXz" role="3XVZ8V">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrX$" role="3XVZ8A">
-            <property role="$nhwW" value="0.0" />
-          </node>
-        </node>
-        <node concept="3XVKd2" id="4dYyq9PNrX_" role="3XUqK6">
-          <node concept="3XUvcq" id="4dYyq9PNrXA" role="3XUqNW">
-            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_base.dae" />
-            <node concept="3b6qkQ" id="4dYyq9PNrXB" role="3XUvc5">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNrXC" role="3XUvc7">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNrXD" role="3XUvc2">
-              <property role="$nhwW" value="100.0" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XSmOE" id="4dYyq9PNrXE" role="3XUqK1">
-          <ref role="3XSmOl" node="4dYyq9PNrWf" resolve="Orange" />
         </node>
       </node>
       <node concept="3XUqK8" id="4dYyq9PNrXF" role="3XUqK9">
@@ -476,45 +253,6 @@
           <property role="$nhwW" value="0.003" />
         </node>
       </node>
-      <node concept="3XVKd6" id="4dYyq9PNrYk" role="3XUqKd">
-        <node concept="u5KF$" id="4dYyq9PNrYl" role="3XVKd7">
-          <node concept="3b6qkQ" id="4dYyq9PNrYs" role="3XVZ8y">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrYt" role="3XVZ8J">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrYu" role="3XVZ8l">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrYv" role="3XVZ8T">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrYw" role="3XVZ8V">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrYx" role="3XVZ8A">
-            <property role="$nhwW" value="3.14159265359" />
-          </node>
-        </node>
-        <node concept="3XVKd2" id="4dYyq9PNrYy" role="3XUqK6">
-          <node concept="3XUvcq" id="4dYyq9PNrYz" role="3XUqNW">
-            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_segment_a.dae" />
-            <node concept="3b6qkQ" id="4dYyq9PNrY$" role="3XUvc5">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNrY_" role="3XUvc7">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNrYA" role="3XUvc2">
-              <property role="$nhwW" value="100.0" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XSmOE" id="4dYyq9PNrYB" role="3XUqK1">
-          <ref role="3XSmOl" node="4dYyq9PNrWf" resolve="Orange" />
-        </node>
-      </node>
       <node concept="3XUqK8" id="4dYyq9PNrYC" role="3XUqK9">
         <node concept="u5KF$" id="4dYyq9PNrYD" role="3XUqNR">
           <node concept="3b6qkQ" id="4dYyq9PNrYK" role="3XVZ8y">
@@ -595,45 +333,6 @@
         </node>
         <node concept="3b6qkQ" id="4dYyq9PNrZg" role="3XUmjd">
           <property role="$nhwW" value="0.003" />
-        </node>
-      </node>
-      <node concept="3XVKd6" id="4dYyq9PNrZh" role="3XUqKd">
-        <node concept="u5KF$" id="4dYyq9PNrZi" role="3XVKd7">
-          <node concept="3b6qkQ" id="4dYyq9PNrZp" role="3XVZ8y">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrZq" role="3XVZ8J">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrZr" role="3XVZ8l">
-            <property role="$nhwW" value="0.2" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrZs" role="3XVZ8T">
-            <property role="$nhwW" value="3.14159265359" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrZt" role="3XVZ8V">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNrZu" role="3XVZ8A">
-            <property role="$nhwW" value="3.14159265359" />
-          </node>
-        </node>
-        <node concept="3XVKd2" id="4dYyq9PNrZv" role="3XUqK6">
-          <node concept="3XUvcq" id="4dYyq9PNrZw" role="3XUqNW">
-            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_segment_b.dae" />
-            <node concept="3b6qkQ" id="4dYyq9PNrZx" role="3XUvc5">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNrZy" role="3XUvc7">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNrZz" role="3XUvc2">
-              <property role="$nhwW" value="100.0" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XSmOE" id="4dYyq9PNrZ$" role="3XUqK1">
-          <ref role="3XSmOl" node="4dYyq9PNrWf" resolve="Orange" />
         </node>
       </node>
       <node concept="3XUqK8" id="4dYyq9PNrZ_" role="3XUqK9">
@@ -718,45 +417,6 @@
           <property role="$nhwW" value="0.003" />
         </node>
       </node>
-      <node concept="3XVKd6" id="4dYyq9PNs0e" role="3XUqKd">
-        <node concept="u5KF$" id="4dYyq9PNs0f" role="3XVKd7">
-          <node concept="3b6qkQ" id="4dYyq9PNs0m" role="3XVZ8y">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs0n" role="3XVZ8J">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs0o" role="3XVZ8l">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs0p" role="3XVZ8T">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs0q" role="3XVZ8V">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs0r" role="3XVZ8A">
-            <property role="$nhwW" value="0.0" />
-          </node>
-        </node>
-        <node concept="3XVKd2" id="4dYyq9PNs0s" role="3XUqK6">
-          <node concept="3XUvcq" id="4dYyq9PNs0t" role="3XUqNW">
-            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_segment_a.dae" />
-            <node concept="3b6qkQ" id="4dYyq9PNs0u" role="3XUvc5">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNs0v" role="3XUvc7">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNs0w" role="3XUvc2">
-              <property role="$nhwW" value="100.0" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XSmOE" id="4dYyq9PNs0x" role="3XUqK1">
-          <ref role="3XSmOl" node="4dYyq9PNrWf" resolve="Orange" />
-        </node>
-      </node>
       <node concept="3XUqK8" id="4dYyq9PNs0y" role="3XUqK9">
         <node concept="u5KF$" id="4dYyq9PNs0z" role="3XUqNR">
           <node concept="3b6qkQ" id="4dYyq9PNs0E" role="3XVZ8y">
@@ -837,45 +497,6 @@
         </node>
         <node concept="3b6qkQ" id="4dYyq9PNs1a" role="3XUmjd">
           <property role="$nhwW" value="0.003" />
-        </node>
-      </node>
-      <node concept="3XVKd6" id="4dYyq9PNs1b" role="3XUqKd">
-        <node concept="u5KF$" id="4dYyq9PNs1c" role="3XVKd7">
-          <node concept="3b6qkQ" id="4dYyq9PNs1j" role="3XVZ8y">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs1k" role="3XVZ8J">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs1l" role="3XVZ8l">
-            <property role="$nhwW" value="0.2" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs1m" role="3XVZ8T">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs1n" role="3XVZ8V">
-            <property role="$nhwW" value="3.14159265359" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs1o" role="3XVZ8A">
-            <property role="$nhwW" value="3.14159265359" />
-          </node>
-        </node>
-        <node concept="3XVKd2" id="4dYyq9PNs1p" role="3XUqK6">
-          <node concept="3XUvcq" id="4dYyq9PNs1q" role="3XUqNW">
-            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_segment_b.dae" />
-            <node concept="3b6qkQ" id="4dYyq9PNs1r" role="3XUvc5">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNs1s" role="3XUvc7">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNs1t" role="3XUvc2">
-              <property role="$nhwW" value="100.0" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XSmOE" id="4dYyq9PNs1u" role="3XUqK1">
-          <ref role="3XSmOl" node="4dYyq9PNrWf" resolve="Orange" />
         </node>
       </node>
       <node concept="3XUqK8" id="4dYyq9PNs1v" role="3XUqK9">
@@ -960,45 +581,6 @@
           <property role="$nhwW" value="0.003" />
         </node>
       </node>
-      <node concept="3XVKd6" id="4dYyq9PNs28" role="3XUqKd">
-        <node concept="u5KF$" id="4dYyq9PNs29" role="3XVKd7">
-          <node concept="3b6qkQ" id="4dYyq9PNs2g" role="3XVZ8y">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs2h" role="3XVZ8J">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs2i" role="3XVZ8l">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs2j" role="3XVZ8T">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs2k" role="3XVZ8V">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs2l" role="3XVZ8A">
-            <property role="$nhwW" value="3.14159265359" />
-          </node>
-        </node>
-        <node concept="3XVKd2" id="4dYyq9PNs2m" role="3XUqK6">
-          <node concept="3XUvcq" id="4dYyq9PNs2n" role="3XUqNW">
-            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_segment_last.dae" />
-            <node concept="3b6qkQ" id="4dYyq9PNs2o" role="3XUvc5">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNs2p" role="3XUvc7">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNs2q" role="3XUvc2">
-              <property role="$nhwW" value="100.0" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XSmOE" id="4dYyq9PNs2r" role="3XUqK1">
-          <ref role="3XSmOl" node="4dYyq9PNrWf" resolve="Orange" />
-        </node>
-      </node>
       <node concept="3XUqK8" id="4dYyq9PNs2s" role="3XUqK9">
         <node concept="u5KF$" id="4dYyq9PNs2t" role="3XUqNR">
           <node concept="3b6qkQ" id="4dYyq9PNs2$" role="3XVZ8y">
@@ -1081,45 +663,6 @@
           <property role="$nhwW" value="0.00260416666667" />
         </node>
       </node>
-      <node concept="3XVKd6" id="4dYyq9PNs35" role="3XUqKd">
-        <node concept="u5KF$" id="4dYyq9PNs36" role="3XVKd7">
-          <node concept="3b6qkQ" id="4dYyq9PNs3d" role="3XVZ8y">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs3e" role="3XVZ8J">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs3f" role="3XVZ8l">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs3g" role="3XVZ8T">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs3h" role="3XVZ8V">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs3i" role="3XVZ8A">
-            <property role="$nhwW" value="3.14159265359" />
-          </node>
-        </node>
-        <node concept="3XVKd2" id="4dYyq9PNs3j" role="3XUqK6">
-          <node concept="3XUvcq" id="4dYyq9PNs3k" role="3XUqNW">
-            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_wrist.dae" />
-            <node concept="3b6qkQ" id="4dYyq9PNs3l" role="3XUvc5">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNs3m" role="3XUvc7">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNs3n" role="3XUvc2">
-              <property role="$nhwW" value="100.0" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XSmOE" id="4dYyq9PNs3o" role="3XUqK1">
-          <ref role="3XSmOl" node="4dYyq9PNrWr" resolve="Grey" />
-        </node>
-      </node>
       <node concept="3XUqK8" id="4dYyq9PNs3p" role="3XUqK9">
         <node concept="u5KF$" id="4dYyq9PNs3q" role="3XUqNR">
           <node concept="3b6qkQ" id="4dYyq9PNs3x" role="3XVZ8y">
@@ -1200,45 +743,6 @@
         </node>
         <node concept="3b6qkQ" id="4dYyq9PNs41" role="3XUmjd">
           <property role="$nhwW" value="0.00012" />
-        </node>
-      </node>
-      <node concept="3XVKd6" id="4dYyq9PNs42" role="3XUqKd">
-        <node concept="u5KF$" id="4dYyq9PNs43" role="3XVKd7">
-          <node concept="3b6qkQ" id="4dYyq9PNs4a" role="3XVZ8y">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs4b" role="3XVZ8J">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs4c" role="3XVZ8l">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs4d" role="3XVZ8T">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs4e" role="3XVZ8V">
-            <property role="$nhwW" value="0.0" />
-          </node>
-          <node concept="3b6qkQ" id="4dYyq9PNs4f" role="3XVZ8A">
-            <property role="$nhwW" value="0.0" />
-          </node>
-        </node>
-        <node concept="3XVKd2" id="4dYyq9PNs4g" role="3XUqK6">
-          <node concept="3XUvcq" id="4dYyq9PNs4h" role="3XUqNW">
-            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_flanche.dae" />
-            <node concept="3b6qkQ" id="4dYyq9PNs4i" role="3XUvc5">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNs4j" role="3XUvc7">
-              <property role="$nhwW" value="100.0" />
-            </node>
-            <node concept="3b6qkQ" id="4dYyq9PNs4k" role="3XUvc2">
-              <property role="$nhwW" value="100.0" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XSmOE" id="4dYyq9PNs4l" role="3XUqK1">
-          <ref role="3XSmOl" node="4dYyq9PNrWr" resolve="Grey" />
         </node>
       </node>
       <node concept="3XUqK8" id="4dYyq9PNs4m" role="3XUqK9">
@@ -1891,93 +1395,6 @@
       <node concept="3XTr_U" id="4dYyq9PNs9E" role="3XTr_p">
         <property role="TrG5h" value="lwr_arm_6_motor" />
       </node>
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNs9F" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNrX1" resolve="lwr_arm_base_link" />
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNs9G" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNs4R" resolve="lwr_arm_0_joint" />
-      <node concept="3XTgP1" id="4dYyq9PNs9H" role="3XTgO5">
-        <property role="3XTgP2" value="true" />
-      </node>
-      <node concept="3XTgO_" id="4dYyq9PNs9I" role="3XTgO0">
-        <property role="3XTgOA" value="true" />
-      </node>
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNs9J" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNrXY" resolve="lwr_arm_1_link" />
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNs9K" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNs5v" resolve="lwr_arm_1_joint" />
-      <node concept="3XTgP1" id="4dYyq9PNs9L" role="3XTgO5">
-        <property role="3XTgP2" value="true" />
-      </node>
-      <node concept="3XTgO_" id="4dYyq9PNs9M" role="3XTgO0">
-        <property role="3XTgOA" value="true" />
-      </node>
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNs9N" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNrYV" resolve="lwr_arm_2_link" />
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNs9O" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNs67" resolve="lwr_arm_2_joint" />
-      <node concept="3XTgP1" id="4dYyq9PNs9P" role="3XTgO5">
-        <property role="3XTgP2" value="true" />
-      </node>
-      <node concept="3XTgO_" id="4dYyq9PNs9Q" role="3XTgO0">
-        <property role="3XTgOA" value="true" />
-      </node>
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNs9R" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNrZS" resolve="lwr_arm_3_link" />
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNs9S" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNs6J" resolve="lwr_arm_3_joint" />
-      <node concept="3XTgP1" id="4dYyq9PNs9T" role="3XTgO5">
-        <property role="3XTgP2" value="true" />
-      </node>
-      <node concept="3XTgO_" id="4dYyq9PNs9U" role="3XTgO0">
-        <property role="3XTgOA" value="true" />
-      </node>
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNs9V" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNs0P" resolve="lwr_arm_4_link" />
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNs9W" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNs7n" resolve="lwr_arm_4_joint" />
-      <node concept="3XTgP1" id="4dYyq9PNs9X" role="3XTgO5">
-        <property role="3XTgP2" value="true" />
-      </node>
-      <node concept="3XTgO_" id="4dYyq9PNs9Y" role="3XTgO0">
-        <property role="3XTgOA" value="true" />
-      </node>
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNs9Z" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNs1M" resolve="lwr_arm_5_link" />
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNsa0" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNs7Z" resolve="lwr_arm_5_joint" />
-      <node concept="3XTgP1" id="4dYyq9PNsa1" role="3XTgO5">
-        <property role="3XTgP2" value="true" />
-      </node>
-      <node concept="3XTgO_" id="4dYyq9PNsa2" role="3XTgO0">
-        <property role="3XTgOA" value="true" />
-      </node>
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNsa3" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNs2J" resolve="lwr_arm_6_link" />
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNsa4" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNs8B" resolve="lwr_arm_6_joint" />
-      <node concept="3XTgP1" id="4dYyq9PNsa5" role="3XTgO5">
-        <property role="3XTgP2" value="true" />
-      </node>
-      <node concept="3XTgO_" id="4dYyq9PNsa6" role="3XTgO0">
-        <property role="3XTgOA" value="true" />
-      </node>
-    </node>
-    <node concept="3XTgP4" id="4dYyq9PNsa7" role="QWIaI">
-      <ref role="3XTgP7" node="4dYyq9PNs3G" resolve="lwr_arm_7_link" />
     </node>
   </node>
   <node concept="u5KEY" id="nxFIIIdXsP">
