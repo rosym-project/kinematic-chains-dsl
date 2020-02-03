@@ -20,6 +20,8 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
+      <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -55,8 +57,37 @@
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
+        <property id="1088613081987" name="vertical" index="1QpmdY" />
+        <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
+        <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
+        <child id="1088612973955" name="ifFalseCellModel" index="1QoVPY" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -65,49 +96,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="5mWmRiCkR6Q">
-    <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiCkPwT" resolve="RobotColor" />
-    <node concept="3EZMnI" id="5mWmRiCkR71" role="2wV5jI">
-      <node concept="3F0ifn" id="5mWmRiCkR78" role="3EZMnx">
-        <property role="3F0ifm" value="color:" />
-      </node>
-      <node concept="3F0ifn" id="5mWmRiCkR7e" role="3EZMnx">
-        <property role="3F0ifm" value="r" />
-      </node>
-      <node concept="3F1sOY" id="5mWmRiCkR7m" role="3EZMnx">
-        <ref role="1NtTu8" to="cewj:5mWmRiCkPxb" resolve="r" />
-      </node>
-      <node concept="3F0ifn" id="5mWmRiCkR7w" role="3EZMnx">
-        <property role="3F0ifm" value="," />
-      </node>
-      <node concept="3F0ifn" id="5mWmRiCkR7G" role="3EZMnx">
-        <property role="3F0ifm" value="g" />
-      </node>
-      <node concept="3F1sOY" id="5mWmRiCkR7U" role="3EZMnx">
-        <ref role="1NtTu8" to="cewj:5mWmRiCkPxd" resolve="g" />
-      </node>
-      <node concept="3F0ifn" id="5mWmRiCkR8a" role="3EZMnx">
-        <property role="3F0ifm" value="," />
-      </node>
-      <node concept="3F0ifn" id="5mWmRiCkR8s" role="3EZMnx">
-        <property role="3F0ifm" value="b" />
-      </node>
-      <node concept="3F1sOY" id="5mWmRiCkR8K" role="3EZMnx">
-        <ref role="1NtTu8" to="cewj:5mWmRiCkPxg" resolve="b" />
-      </node>
-      <node concept="3F0ifn" id="5mWmRiCkR96" role="3EZMnx">
-        <property role="3F0ifm" value="," />
-      </node>
-      <node concept="3F0ifn" id="5mWmRiCkR9u" role="3EZMnx">
-        <property role="3F0ifm" value="a" />
-      </node>
-      <node concept="3F1sOY" id="5mWmRiCkR9S" role="3EZMnx">
-        <ref role="1NtTu8" to="cewj:5mWmRiCkPxk" resolve="a" />
-      </node>
-      <node concept="2iRfu4" id="5mWmRiCkR74" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="5mWmRiCkU_I">
     <property role="3GE5qa" value="KinematicDescription" />
     <ref role="1XX52x" to="cewj:3Wmswgx0nzw" resolve="Origin" />
@@ -168,7 +156,7 @@
   </node>
   <node concept="24kQdi" id="5mWmRiCljZV">
     <property role="3GE5qa" value="KinematicDescription" />
-    <ref role="1XX52x" to="cewj:3Wmswgx0phE" resolve="RobotLinkInertial" />
+    <ref role="1XX52x" to="cewj:3Wmswgx0phE" resolve="LinkInertial" />
     <node concept="3EZMnI" id="5mWmRiCljZX" role="2wV5jI">
       <node concept="l2Vlx" id="5mWmRiClk00" role="2iSdaV" />
       <node concept="3F0ifn" id="5mWmRiClk0f" role="3EZMnx">
@@ -263,188 +251,16 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="5mWmRiClozX">
-    <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiClozM" resolve="GeometryBox" />
-    <node concept="3EZMnI" id="5mWmRiClo$8" role="2wV5jI">
-      <node concept="3F0ifn" id="5mWmRiClo$f" role="3EZMnx">
-        <property role="3F0ifm" value="Box:" />
-      </node>
-      <node concept="3EZMnI" id="5mWmRiClpv9" role="3EZMnx">
-        <node concept="VPM3Z" id="5mWmRiClpvb" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3EZMnI" id="5mWmRiClpvk" role="3EZMnx">
-          <node concept="VPM3Z" id="5mWmRiClpvm" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClo$l" role="3EZMnx">
-            <property role="3F0ifm" value="size =" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClo_6" role="3EZMnx">
-            <property role="3F0ifm" value="[" />
-          </node>
-          <node concept="3F1sOY" id="5mWmRiClo$t" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:5mWmRiClozP" resolve="sizeX" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClo_i" role="3EZMnx">
-            <property role="3F0ifm" value="," />
-          </node>
-          <node concept="3F1sOY" id="5mWmRiClo_w" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:5mWmRiClo$y" resolve="sizeY" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClo_K" role="3EZMnx">
-            <property role="3F0ifm" value="," />
-          </node>
-          <node concept="3F1sOY" id="5mWmRiCloA2" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:5mWmRiClo$_" resolve="sizeZ" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiCloAm" role="3EZMnx">
-            <property role="3F0ifm" value="]" />
-          </node>
-          <node concept="2iRfu4" id="5mWmRiClpvp" role="2iSdaV" />
-        </node>
-        <node concept="2iRkQZ" id="5mWmRiClpve" role="2iSdaV" />
-      </node>
-      <node concept="2iRfu4" id="5mWmRiClo$b" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="5mWmRiClpvO">
-    <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiClpvA" resolve="GeometryCylinder" />
-    <node concept="3EZMnI" id="5mWmRiClpvQ" role="2wV5jI">
-      <node concept="3F0ifn" id="5mWmRiClpvR" role="3EZMnx">
-        <property role="3F0ifm" value="Cylinder:" />
-      </node>
-      <node concept="3EZMnI" id="5mWmRiClpvS" role="3EZMnx">
-        <node concept="VPM3Z" id="5mWmRiClpvT" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3EZMnI" id="5mWmRiClpvU" role="3EZMnx">
-          <node concept="VPM3Z" id="5mWmRiClpvV" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClpvW" role="3EZMnx">
-            <property role="3F0ifm" value="radius =" />
-          </node>
-          <node concept="3F1sOY" id="5mWmRiClpw$" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:5mWmRiClpvD" resolve="radius" />
-          </node>
-          <node concept="2iRfu4" id="5mWmRiClpw4" role="2iSdaV" />
-        </node>
-        <node concept="3EZMnI" id="5mWmRiClpwP" role="3EZMnx">
-          <node concept="VPM3Z" id="5mWmRiClpwQ" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClpwR" role="3EZMnx">
-            <property role="3F0ifm" value="length =" />
-          </node>
-          <node concept="3F1sOY" id="5mWmRiClpwT" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:5mWmRiClpvF" resolve="length" />
-          </node>
-          <node concept="2iRfu4" id="5mWmRiClpwV" role="2iSdaV" />
-        </node>
-        <node concept="2iRkQZ" id="5mWmRiClpw5" role="2iSdaV" />
-      </node>
-      <node concept="2iRfu4" id="5mWmRiClpw6" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="5mWmRiClqa2">
-    <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiClq9R" resolve="GeometrySphere" />
-    <node concept="3EZMnI" id="5mWmRiClqa4" role="2wV5jI">
-      <node concept="3F0ifn" id="5mWmRiClqa5" role="3EZMnx">
-        <property role="3F0ifm" value="Sphere:" />
-      </node>
-      <node concept="3EZMnI" id="5mWmRiClqa6" role="3EZMnx">
-        <node concept="VPM3Z" id="5mWmRiClqa7" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3EZMnI" id="5mWmRiClqa8" role="3EZMnx">
-          <node concept="VPM3Z" id="5mWmRiClqa9" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClqaa" role="3EZMnx">
-            <property role="3F0ifm" value="radius =" />
-          </node>
-          <node concept="3F1sOY" id="5mWmRiClqaM" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:5mWmRiClq9U" resolve="radius" />
-          </node>
-          <node concept="2iRfu4" id="5mWmRiClqai" role="2iSdaV" />
-        </node>
-        <node concept="2iRkQZ" id="5mWmRiClqaj" role="2iSdaV" />
-      </node>
-      <node concept="2iRfu4" id="5mWmRiClqak" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="5mWmRiClqy2">
-    <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiClqxI" resolve="GeometryMesh" />
-    <node concept="3EZMnI" id="5mWmRiClqy4" role="2wV5jI">
-      <node concept="3F0ifn" id="5mWmRiClqy5" role="3EZMnx">
-        <property role="3F0ifm" value="Mesh:" />
-      </node>
-      <node concept="3EZMnI" id="5mWmRiClqy6" role="3EZMnx">
-        <node concept="VPM3Z" id="5mWmRiClqy7" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3EZMnI" id="5mWmRiClqyQ" role="3EZMnx">
-          <node concept="VPM3Z" id="5mWmRiClqyS" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClqyU" role="3EZMnx">
-            <property role="3F0ifm" value="filename:" />
-          </node>
-          <node concept="3F0A7n" id="5mWmRiClqzh" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:5mWmRiClqxU" resolve="filename" />
-          </node>
-          <node concept="2iRfu4" id="5mWmRiClqyV" role="2iSdaV" />
-        </node>
-        <node concept="3EZMnI" id="5mWmRiClqy8" role="3EZMnx">
-          <node concept="VPM3Z" id="5mWmRiClqy9" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClqya" role="3EZMnx">
-            <property role="3F0ifm" value="scale =" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClqyb" role="3EZMnx">
-            <property role="3F0ifm" value="[" />
-          </node>
-          <node concept="3F1sOY" id="5mWmRiClqyc" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:5mWmRiClqxL" resolve="scaleX" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClqyd" role="3EZMnx">
-            <property role="3F0ifm" value="," />
-          </node>
-          <node concept="3F1sOY" id="5mWmRiClqye" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:5mWmRiClqxN" resolve="scaleY" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClqyf" role="3EZMnx">
-            <property role="3F0ifm" value="," />
-          </node>
-          <node concept="3F1sOY" id="5mWmRiClqyg" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:5mWmRiClqxQ" resolve="scaleZ" />
-          </node>
-          <node concept="3F0ifn" id="5mWmRiClqyh" role="3EZMnx">
-            <property role="3F0ifm" value="]" />
-          </node>
-          <node concept="2iRfu4" id="5mWmRiClqyi" role="2iSdaV" />
-        </node>
-        <node concept="2iRkQZ" id="5mWmRiClqyj" role="2iSdaV" />
-      </node>
-      <node concept="2iRfu4" id="5mWmRiClqyk" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="5mWmRiClvug">
     <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiCkPwQ" resolve="RobotLinkGeometry" />
+    <ref role="1XX52x" to="cewj:5mWmRiCkPwQ" resolve="LinkGeometry" />
     <node concept="3F1sOY" id="5mWmRiClvui" role="2wV5jI">
       <ref role="1NtTu8" to="cewj:5mWmRiClvu8" resolve="geometry" />
     </node>
   </node>
   <node concept="24kQdi" id="5mWmRiClvx2">
     <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiClvtW" resolve="RobotLinkCollision" />
+    <ref role="1XX52x" to="cewj:5mWmRiClvtW" resolve="LinkCollision" />
     <node concept="3EZMnI" id="5mWmRiClvx4" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClvxb" role="3EZMnx">
         <property role="3F0ifm" value="Collision:" />
@@ -490,7 +306,7 @@
   </node>
   <node concept="24kQdi" id="5mWmRiClvyB">
     <property role="3GE5qa" value="KinematicDescription" />
-    <ref role="1XX52x" to="cewj:3Wmswgx0nyW" resolve="RobotLink" />
+    <ref role="1XX52x" to="cewj:3Wmswgx0nyW" resolve="Link" />
     <node concept="3EZMnI" id="5mWmRiClvyD" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClvyK" role="3EZMnx">
         <property role="3F0ifm" value="Link:" />
@@ -523,7 +339,7 @@
   </node>
   <node concept="24kQdi" id="5mWmRiClz8l">
     <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiClz85" resolve="RobotJointAxis" />
+    <ref role="1XX52x" to="cewj:5mWmRiClz85" resolve="JointAxis" />
     <node concept="3EZMnI" id="5mWmRiClz8n" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClz8u" role="3EZMnx">
         <property role="3F0ifm" value="Axis:" />
@@ -554,7 +370,7 @@
   </node>
   <node concept="24kQdi" id="5mWmRiCl_Zg">
     <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiCl_Z4" resolve="RobotJointDynamics" />
+    <ref role="1XX52x" to="cewj:5mWmRiCl_Z4" resolve="JointDynamics" />
     <node concept="3EZMnI" id="5mWmRiCl_Zi" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCl_Zp" role="3EZMnx">
         <property role="3F0ifm" value="Dynamics:" />
@@ -594,7 +410,7 @@
   </node>
   <node concept="24kQdi" id="5mWmRiClB_3">
     <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiClB$y" resolve="RobotJointLimit" />
+    <ref role="1XX52x" to="cewj:5mWmRiClB$y" resolve="JointLimit" />
     <node concept="3EZMnI" id="5mWmRiClB_5" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClB_c" role="3EZMnx">
         <property role="3F0ifm" value="Limit:" />
@@ -658,7 +474,7 @@
   </node>
   <node concept="24kQdi" id="5mWmRiClDZT">
     <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiClDZ$" resolve="RobotJointSafetyController" />
+    <ref role="1XX52x" to="cewj:5mWmRiClDZ$" resolve="JointSafetyController" />
     <node concept="3EZMnI" id="5mWmRiClDZV" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClE02" role="3EZMnx">
         <property role="3F0ifm" value="Safety Controller:" />
@@ -722,7 +538,7 @@
   </node>
   <node concept="24kQdi" id="5mWmRiClGrH">
     <property role="3GE5qa" value="Kinematics" />
-    <ref role="1XX52x" to="cewj:5mWmRiClGrx" resolve="RobotJointCalibration" />
+    <ref role="1XX52x" to="cewj:5mWmRiClGrx" resolve="JointCalibration" />
     <node concept="3EZMnI" id="5mWmRiClGrJ" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClGrQ" role="3EZMnx">
         <property role="3F0ifm" value="Calibration:" />
@@ -747,7 +563,7 @@
   </node>
   <node concept="24kQdi" id="5mWmRiClHhD">
     <property role="3GE5qa" value="KinematicDescription" />
-    <ref role="1XX52x" to="cewj:3Wmswgx0nyV" resolve="RobotJoint" />
+    <ref role="1XX52x" to="cewj:3Wmswgx0nyV" resolve="Joint" />
     <node concept="3EZMnI" id="5mWmRiClHhF" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiClHhG" role="3EZMnx">
         <property role="3F0ifm" value="Joint:" />
@@ -763,8 +579,28 @@
           <node concept="3F0ifn" id="5mWmRiCo3cS" role="3EZMnx">
             <property role="3F0ifm" value="Type:" />
           </node>
-          <node concept="3F0A7n" id="5mWmRiCo3cY" role="3EZMnx">
-            <ref role="1NtTu8" to="cewj:425YjngOn4C" resolve="type" />
+          <node concept="1QoScp" id="3Z2s42sP7rO" role="3EZMnx">
+            <property role="1QpmdY" value="true" />
+            <node concept="3F0ifn" id="3Z2s42sP7Z4" role="1QoS34">
+              <property role="3F0ifm" value="Prismatic" />
+            </node>
+            <node concept="pkWqt" id="3Z2s42sP7rR" role="3e4ffs">
+              <node concept="3clFbS" id="3Z2s42sP7rT" role="2VODD2">
+                <node concept="3clFbF" id="3Z2s42sXIpk" role="3cqZAp">
+                  <node concept="2OqwBi" id="3Z2s42sXHWH" role="3clFbG">
+                    <node concept="pncrf" id="3Z2s42sXHHF" role="2Oq$k0" />
+                    <node concept="1mIQ4w" id="3Z2s42sXIev" role="2OqNvi">
+                      <node concept="chp4Y" id="3Z2s42sXIhD" role="cj9EA">
+                        <ref role="cht4Q" to="cewj:3Z2s42slShB" resolve="PrismaticJoint" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3F0ifn" id="3Z2s42sP83T" role="1QoVPY">
+              <property role="3F0ifm" value="Revolute" />
+            </node>
           </node>
           <node concept="2iRfu4" id="5mWmRiCo3cl" role="2iSdaV" />
         </node>
@@ -901,7 +737,7 @@
   </node>
   <node concept="24kQdi" id="5mWmRiCmAM7">
     <property role="3GE5qa" value="KinematicDescription" />
-    <ref role="1XX52x" to="cewj:3Wmswgx0nyU" resolve="RobotModel" />
+    <ref role="1XX52x" to="cewj:3Wmswgx0nyU" resolve="Robot" />
     <node concept="3EZMnI" id="5mWmRiCmAM9" role="2wV5jI">
       <node concept="3F0ifn" id="5mWmRiCmAMg" role="3EZMnx">
         <property role="3F0ifm" value="Robot Model:" />

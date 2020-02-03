@@ -420,6 +420,11 @@
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3Z2s42sUrss" role="3bR37C">
+          <node concept="3bR9La" id="3Z2s42sUrst" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3U2bBlMYz7" role="2G$12L">
         <property role="BnDLt" value="true" />

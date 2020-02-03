@@ -9,7 +9,6 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="cewj" ref="r:cd13618c-02ad-4af8-a3e4-3414c58c4613(KinematicChains.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -32,7 +31,6 @@
       </concept>
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -96,10 +94,6 @@
         <child id="1206060644605" name="statementList" index="3eOfB_" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
-      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -150,9 +144,13 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
-      <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
-        <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
       </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -165,17 +163,11 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
-      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
-        <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -385,7 +377,7 @@
   </node>
   <node concept="13h7C7" id="5mWmRiCl$Q4">
     <property role="3GE5qa" value="Kinematics" />
-    <ref role="13h7C2" to="cewj:5mWmRiClz85" resolve="RobotJointAxis" />
+    <ref role="13h7C2" to="cewj:5mWmRiClz85" resolve="JointAxis" />
     <node concept="13hLZK" id="5mWmRiCl$Q5" role="13h7CW">
       <node concept="3clFbS" id="5mWmRiCl$Q6" role="2VODD2">
         <node concept="3clFbF" id="5mWmRiCl$Qg" role="3cqZAp">
@@ -456,7 +448,7 @@
   </node>
   <node concept="13h7C7" id="5mWmRiClAy0">
     <property role="3GE5qa" value="Kinematics" />
-    <ref role="13h7C2" to="cewj:5mWmRiCl_Z4" resolve="RobotJointDynamics" />
+    <ref role="13h7C2" to="cewj:5mWmRiCl_Z4" resolve="JointDynamics" />
     <node concept="13hLZK" id="5mWmRiClAy1" role="13h7CW">
       <node concept="3clFbS" id="5mWmRiClAy2" role="2VODD2">
         <node concept="3clFbF" id="5mWmRiClAyc" role="3cqZAp">
@@ -506,7 +498,7 @@
   </node>
   <node concept="13h7C7" id="5mWmRiClBBV">
     <property role="3GE5qa" value="Kinematics" />
-    <ref role="13h7C2" to="cewj:5mWmRiClB$y" resolve="RobotJointLimit" />
+    <ref role="13h7C2" to="cewj:5mWmRiClB$y" resolve="JointLimit" />
     <node concept="13hLZK" id="5mWmRiClBBW" role="13h7CW">
       <node concept="3clFbS" id="5mWmRiClBBX" role="2VODD2">
         <node concept="3clFbF" id="5mWmRiClBC7" role="3cqZAp">
@@ -556,7 +548,7 @@
   </node>
   <node concept="13h7C7" id="5mWmRiClE2L">
     <property role="3GE5qa" value="Kinematics" />
-    <ref role="13h7C2" to="cewj:5mWmRiClDZ$" resolve="RobotJointSafetyController" />
+    <ref role="13h7C2" to="cewj:5mWmRiClDZ$" resolve="JointSafetyController" />
     <node concept="13hLZK" id="5mWmRiClE2M" role="13h7CW">
       <node concept="3clFbS" id="5mWmRiClE2N" role="2VODD2">
         <node concept="3clFbF" id="5mWmRiClE2X" role="3cqZAp">
@@ -696,7 +688,7 @@
               <node concept="3cpWsn" id="6p7_7P9008G" role="3cpWs9">
                 <property role="TrG5h" value="baseLinkModel" />
                 <node concept="3Tqbb2" id="6p7_7P9008B" role="1tU5fm">
-                  <ref role="ehGHo" to="cewj:3Wmswgx0nyU" resolve="RobotModel" />
+                  <ref role="ehGHo" to="cewj:3Wmswgx0nyU" resolve="Robot" />
                 </node>
                 <node concept="2OqwBi" id="6p7_7P8ZYk5" role="33vP2m">
                   <node concept="2OqwBi" id="6p7_7P8ZXQv" role="2Oq$k0">
@@ -708,7 +700,7 @@
                   <node concept="2Xjw5R" id="6p7_7P8ZY$4" role="2OqNvi">
                     <node concept="1xMEDy" id="6p7_7P8ZY$6" role="1xVPHs">
                       <node concept="chp4Y" id="6p7_7P8ZZXd" role="ri$Ld">
-                        <ref role="cht4Q" to="cewj:3Wmswgx0nyU" resolve="RobotModel" />
+                        <ref role="cht4Q" to="cewj:3Wmswgx0nyU" resolve="Robot" />
                       </node>
                     </node>
                   </node>
@@ -747,7 +739,7 @@
               <node concept="3cpWsn" id="6p7_7P900vo" role="3cpWs9">
                 <property role="TrG5h" value="tipLinkModel" />
                 <node concept="3Tqbb2" id="6p7_7P900vp" role="1tU5fm">
-                  <ref role="ehGHo" to="cewj:3Wmswgx0nyU" resolve="RobotModel" />
+                  <ref role="ehGHo" to="cewj:3Wmswgx0nyU" resolve="Robot" />
                 </node>
                 <node concept="2OqwBi" id="6p7_7P900vq" role="33vP2m">
                   <node concept="2OqwBi" id="6p7_7P900vr" role="2Oq$k0">
@@ -759,7 +751,7 @@
                   <node concept="2Xjw5R" id="6p7_7P900vu" role="2OqNvi">
                     <node concept="1xMEDy" id="6p7_7P900vv" role="1xVPHs">
                       <node concept="chp4Y" id="6p7_7P900vw" role="ri$Ld">
-                        <ref role="cht4Q" to="cewj:3Wmswgx0nyU" resolve="RobotModel" />
+                        <ref role="cht4Q" to="cewj:3Wmswgx0nyU" resolve="Robot" />
                       </node>
                     </node>
                   </node>
@@ -773,7 +765,7 @@
                   <node concept="3cpWsn" id="6p7_7P90_i$" role="3cpWs9">
                     <property role="TrG5h" value="tmpBaseLink" />
                     <node concept="3Tqbb2" id="6p7_7P90_iv" role="1tU5fm">
-                      <ref role="ehGHo" to="cewj:3Wmswgx0nyW" resolve="RobotLink" />
+                      <ref role="ehGHo" to="cewj:3Wmswgx0nyW" resolve="Link" />
                     </node>
                     <node concept="2OqwBi" id="6p7_7P90Avh" role="33vP2m">
                       <node concept="13iPFW" id="6p7_7P90AkC" role="2Oq$k0" />
@@ -821,7 +813,7 @@
                                               <ref role="3cqZAo" node="6p7_7P90NeK" resolve="it" />
                                             </node>
                                             <node concept="chp4Y" id="44DwksjZ1_S" role="3oSUPX">
-                                              <ref role="cht4Q" to="cewj:3Wmswgx0nyV" resolve="RobotJoint" />
+                                              <ref role="cht4Q" to="cewj:3Wmswgx0nyV" resolve="Joint" />
                                             </node>
                                           </node>
                                           <node concept="3TrEf2" id="6p7_7P90Q9L" role="2OqNvi">
@@ -835,7 +827,7 @@
                                         </node>
                                         <node concept="1mIQ4w" id="6p7_7P90NUc" role="2OqNvi">
                                           <node concept="chp4Y" id="6p7_7P90Oar" role="cj9EA">
-                                            <ref role="cht4Q" to="cewj:3Wmswgx0nyV" resolve="RobotJoint" />
+                                            <ref role="cht4Q" to="cewj:3Wmswgx0nyV" resolve="Joint" />
                                           </node>
                                         </node>
                                       </node>
@@ -910,7 +902,7 @@
                             <node concept="3cpWsn" id="6p7_7P91fhE" role="3cpWs9">
                               <property role="TrG5h" value="finalJoint" />
                               <node concept="3Tqbb2" id="6p7_7P91fh_" role="1tU5fm">
-                                <ref role="ehGHo" to="cewj:3Wmswgx0nyV" resolve="RobotJoint" />
+                                <ref role="ehGHo" to="cewj:3Wmswgx0nyV" resolve="Joint" />
                               </node>
                               <node concept="1PxgMI" id="6p7_7P938CZ" role="33vP2m">
                                 <node concept="2OqwBi" id="6p7_7P917wL" role="1m5AlR">
@@ -924,7 +916,7 @@
                                   </node>
                                 </node>
                                 <node concept="chp4Y" id="44DwksjZ2Se" role="3oSUPX">
-                                  <ref role="cht4Q" to="cewj:3Wmswgx0nyV" resolve="RobotJoint" />
+                                  <ref role="cht4Q" to="cewj:3Wmswgx0nyV" resolve="Joint" />
                                 </node>
                               </node>
                             </node>
@@ -942,59 +934,26 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="3cpWs8" id="6p7_7P91oDu" role="3cqZAp">
-                            <node concept="3cpWsn" id="6p7_7P91oDx" role="3cpWs9">
-                              <property role="TrG5h" value="tmpDOF" />
-                              <node concept="10Oyi0" id="6p7_7P91oDs" role="1tU5fm" />
-                              <node concept="3cmrfG" id="6p7_7P91oNl" role="33vP2m">
-                                <property role="3cmrfH" value="0" />
-                              </node>
+                          <node concept="Jncv_" id="3Z2s42sP0Rn" role="3cqZAp">
+                            <ref role="JncvD" to="cewj:3Z2s42slShC" resolve="RevoluteJoint" />
+                            <node concept="37vLTw" id="3Z2s42sP1Sh" role="JncvB">
+                              <ref role="3cqZAo" node="6p7_7P91fhE" resolve="finalJoint" />
                             </node>
-                          </node>
-                          <node concept="3clFbJ" id="6p7_7P91gAw" role="3cqZAp">
-                            <node concept="3clFbS" id="6p7_7P91gAy" role="3clFbx">
-                              <node concept="3clFbF" id="6p7_7P91oNU" role="3cqZAp">
-                                <node concept="37vLTI" id="6p7_7P91puL" role="3clFbG">
-                                  <node concept="3cmrfG" id="6p7_7P91puZ" role="37vLTx">
+                            <node concept="3clFbS" id="3Z2s42sP0Rr" role="Jncv$">
+                              <node concept="3clFbF" id="3Z2s42sP2U0" role="3cqZAp">
+                                <node concept="d57v9" id="3Z2s42sP52m" role="3clFbG">
+                                  <node concept="37vLTw" id="3Z2s42sP52p" role="37vLTJ">
+                                    <ref role="3cqZAo" node="6p7_7P903Iv" resolve="dof" />
+                                  </node>
+                                  <node concept="3cmrfG" id="3Z2s42sP52o" role="37vLTx">
                                     <property role="3cmrfH" value="1" />
                                   </node>
-                                  <node concept="37vLTw" id="6p7_7P91oNS" role="37vLTJ">
-                                    <ref role="3cqZAo" node="6p7_7P91oDx" resolve="tmpDOF" />
-                                  </node>
                                 </node>
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="6p7_7P93sdZ" role="3clFbw">
-                              <node concept="2OqwBi" id="6p7_7P91gRp" role="2Oq$k0">
-                                <node concept="37vLTw" id="6p7_7P91gG6" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="6p7_7P91fhE" resolve="finalJoint" />
-                                </node>
-                                <node concept="3TrcHB" id="425YjngPP3p" role="2OqNvi">
-                                  <ref role="3TsBF5" to="cewj:425YjngOn4C" resolve="type" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="6p7_7P93swv" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
-                                <node concept="2OqwBi" id="425YjngPPU_" role="37wK5m">
-                                  <node concept="1XH99k" id="425YjngPPom" role="2Oq$k0">
-                                    <ref role="1XH99l" to="cewj:425YjngOn4b" resolve="RobotJointType" />
-                                  </node>
-                                  <node concept="2ViDtV" id="425YjngPQ88" role="2OqNvi">
-                                    <ref role="2ViDtZ" to="cewj:425YjngOn4d" resolve="revolute" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbH" id="6p7_7P91tJt" role="3cqZAp" />
-                          <node concept="3clFbF" id="6p7_7P91xbg" role="3cqZAp">
-                            <node concept="d57v9" id="6p7_7P91z6E" role="3clFbG">
-                              <node concept="37vLTw" id="6p7_7P91z80" role="37vLTx">
-                                <ref role="3cqZAo" node="6p7_7P91oDx" resolve="tmpDOF" />
-                              </node>
-                              <node concept="37vLTw" id="6p7_7P91xbe" role="37vLTJ">
-                                <ref role="3cqZAo" node="6p7_7P903Iv" resolve="dof" />
-                              </node>
+                            <node concept="JncvC" id="3Z2s42sP0Rt" role="JncvA">
+                              <property role="TrG5h" value="joint" />
+                              <node concept="2jxLKc" id="3Z2s42sP0Ru" role="1tU5fm" />
                             </node>
                           </node>
                           <node concept="3clFbJ" id="6p7_7P91tA4" role="3cqZAp">

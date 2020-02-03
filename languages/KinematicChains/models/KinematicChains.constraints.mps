@@ -5,7 +5,6 @@
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
-    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="cewj" ref="r:cd13618c-02ad-4af8-a3e4-3414c58c4613(KinematicChains.structure)" implicit="true" />
   </imports>
   <registry>
@@ -34,13 +33,13 @@
     <node concept="1N5Pfh" id="6p7_7P94iKd" role="1Mr941">
       <ref role="1N5Vy1" to="cewj:3Wmswgx0$ry" resolve="baseLink" />
       <node concept="1dDu$B" id="6p7_7P94j$u" role="1N6uqs">
-        <ref role="1dDu$A" to="cewj:3Wmswgx0nyW" resolve="RobotLink" />
+        <ref role="1dDu$A" to="cewj:3Wmswgx0nyW" resolve="Link" />
       </node>
     </node>
     <node concept="1N5Pfh" id="6p7_7P94JTv" role="1Mr941">
       <ref role="1N5Vy1" to="cewj:3Wmswgx0$rD" resolve="tipLink" />
       <node concept="1dDu$B" id="6p7_7P94Kjl" role="1N6uqs">
-        <ref role="1dDu$A" to="cewj:3Wmswgx0nyW" resolve="RobotLink" />
+        <ref role="1dDu$A" to="cewj:3Wmswgx0nyW" resolve="Link" />
       </node>
     </node>
   </node>
