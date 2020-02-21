@@ -160,7 +160,7 @@
   <node concept="1l3spW" id="2RDM3_ZXwQQ">
     <property role="TrG5h" value="KinematicChains" />
     <property role="2DA0ip" value="../../" />
-    <property role="turDy" value="build-plugin-mps.xml" />
+    <property role="turDy" value="build.xml" />
     <node concept="10PD9b" id="2RDM3_ZXwQR" role="10PD9s" />
     <node concept="3b7kt6" id="2RDM3_ZXwQS" role="10PD9s" />
     <node concept="398rNT" id="2RDM3_ZXwQT" role="1l3spd">
