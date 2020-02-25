@@ -125,6 +125,9 @@
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
+      <concept id="1265949165890536423" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleJars" flags="ng" index="L2wRC">
+        <reference id="1265949165890536425" name="module" index="L2wRA" />
+      </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <child id="5253498789149547825" name="sources" index="3bR31x" />
@@ -239,6 +242,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="L2wRC" id="6elPPFNBIcH" role="39821P">
+        <ref role="L2wRA" node="3U2bBlMYz7" resolve="KinematicChains.build" />
       </node>
     </node>
     <node concept="m$_wf" id="2RDM3_ZXwR3" role="3989C9">
