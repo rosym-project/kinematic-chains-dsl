@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/KinematicChains/KinematicChains.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/KinematicChains_Algorithm/KinematicChains_Algorithm.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/KinematicChains_CGenerator/KinematicChains_CGenerator.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/KinematicChains.build/KinematicChains.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/KinematicChains.sandbox/KinematicChains.sandbox.msd" folder="" />
     </projectModules>
