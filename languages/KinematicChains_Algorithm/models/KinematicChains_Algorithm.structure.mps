@@ -7,11 +7,13 @@
   </languages>
   <imports>
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -37,6 +39,34 @@
     <property role="3GE5qa" value="Operations" />
     <property role="TrG5h" value="ForwardVelocityKinematics" />
     <ref role="1TJDcQ" to="yvgz:3eP8Zudp5G4" resolve="FunctionBlock" />
+  </node>
+  <node concept="1TIwiD" id="3hqim12GtmP">
+    <property role="EcuMT" value="3772408315660850613" />
+    <property role="TrG5h" value="Joint" />
+    <property role="34LRSv" value="Joint" />
+    <property role="3GE5qa" value="Types" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="3hqim12Gt$k">
+    <property role="EcuMT" value="3772408315660851476" />
+    <property role="3GE5qa" value="Types" />
+    <property role="TrG5h" value="JointPosition" />
+    <property role="34LRSv" value="JointPosition" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="3hqim12Gv9S">
+    <property role="EcuMT" value="3772408315660857976" />
+    <property role="3GE5qa" value="Types" />
+    <property role="TrG5h" value="JointVelocity" />
+    <property role="34LRSv" value="JointVelocity" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="3hqim12Gv$G">
+    <property role="EcuMT" value="3772408315660859692" />
+    <property role="3GE5qa" value="Types" />
+    <property role="TrG5h" value="JointType" />
+    <property role="34LRSv" value="JointType" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
   </node>
 </model>
 

@@ -14,6 +14,9 @@
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG" />
       <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
+      <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
+        <child id="1177093586806" name="templateNode" index="gfFT$" />
+      </concept>
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1112730859144" name="jetbrains.mps.lang.generator.structure.TemplateSwitch" flags="ig" index="jVnub">
         <reference id="1112820671508" name="modifiedSwitch" index="phYkn" />
@@ -169,6 +172,66 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="ptq9:691yVC03uFU" resolve="ForwardVelocityKinematics" />
       <node concept="b5Tf3" id="3hqim12GuyV" role="1lVwrX" />
+    </node>
+  </node>
+  <node concept="jVnub" id="3hqim12GuWV">
+    <property role="TrG5h" value="switch_KinematicChainsTypeRepresentation" />
+    <ref role="phYkn" to="2g3d:58QN4$b28qm" resolve="switch_TypeRepresentation" />
+    <node concept="3aamgX" id="3hqim12GuWW" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ptq9:3hqim12GtmP" resolve="Joint" />
+      <node concept="gft3U" id="3hqim12GuX9" role="1lVwrX">
+        <node concept="356WMU" id="3hqim12GuXd" role="gfFT$">
+          <node concept="356sEK" id="3hqim12GuXf" role="383Ya9">
+            <node concept="356sEF" id="3hqim12GuXg" role="356sEH">
+              <property role="TrG5h" value="struct gc_joint" />
+            </node>
+            <node concept="2EixSi" id="3hqim12GuXh" role="2EinRH" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3hqim12GvRw" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ptq9:3hqim12Gv$G" resolve="JointType" />
+      <node concept="gft3U" id="3hqim12GvRQ" role="1lVwrX">
+        <node concept="356WMU" id="3hqim12GvRW" role="gfFT$">
+          <node concept="356sEK" id="3hqim12GvRY" role="383Ya9">
+            <node concept="356sEF" id="3hqim12GvRZ" role="356sEH">
+              <property role="TrG5h" value="enum joint_type" />
+            </node>
+            <node concept="2EixSi" id="3hqim12GvS0" role="2EinRH" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3hqim12GuXl" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ptq9:3hqim12Gt$k" resolve="JointPosition" />
+      <node concept="gft3U" id="3hqim12GuXv" role="1lVwrX">
+        <node concept="356WMU" id="3hqim12GuX_" role="gfFT$">
+          <node concept="356sEK" id="3hqim12GuXB" role="383Ya9">
+            <node concept="356sEF" id="3hqim12GuXC" role="356sEH">
+              <property role="TrG5h" value="joint_position" />
+            </node>
+            <node concept="2EixSi" id="3hqim12GuXD" role="2EinRH" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3hqim12Gv9T" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ptq9:3hqim12Gv9S" resolve="JointVelocity" />
+      <node concept="gft3U" id="3hqim12Gva9" role="1lVwrX">
+        <node concept="356WMU" id="3hqim12Gvaf" role="gfFT$">
+          <node concept="356sEK" id="3hqim12Gvah" role="383Ya9">
+            <node concept="356sEF" id="3hqim12Gvai" role="356sEH">
+              <property role="TrG5h" value="joint_velocity" />
+            </node>
+            <node concept="2EixSi" id="3hqim12Gvaj" role="2EinRH" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
