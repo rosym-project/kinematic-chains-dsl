@@ -377,5 +377,37 @@
       </node>
     </node>
   </node>
+  <node concept="jVnub" id="1W5BUKIjhiK">
+    <property role="TrG5h" value="switch_KinematicChainsFunctionHeaderInclude" />
+    <ref role="phYkn" to="2g3d:w_xyS7nP1A" resolve="switch_FunctionHeaderInclude" />
+    <node concept="3aamgX" id="1W5BUKIjhiL" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ptq9:691yVC03upY" resolve="ForwardPositionKinematics" />
+      <node concept="gft3U" id="1W5BUKIkmL8" role="1lVwrX">
+        <node concept="356WMU" id="1W5BUKIkmLe" role="gfFT$">
+          <node concept="356sEK" id="1W5BUKIkmLg" role="383Ya9">
+            <node concept="356sEF" id="1W5BUKIkmLh" role="356sEH">
+              <property role="TrG5h" value="#include &lt;dyn2b/functions/kinematic_chain.h&gt;" />
+            </node>
+            <node concept="2EixSi" id="1W5BUKIkmLi" role="2EinRH" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="1W5BUKIjhud" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ptq9:691yVC03uFU" resolve="ForwardVelocityKinematics" />
+      <node concept="gft3U" id="1W5BUKIkmLo" role="1lVwrX">
+        <node concept="356WMU" id="1W5BUKIkmLu" role="gfFT$">
+          <node concept="356sEK" id="1W5BUKIkmLw" role="383Ya9">
+            <node concept="356sEF" id="1W5BUKIkmLx" role="356sEH">
+              <property role="TrG5h" value="#include &lt;dyn2b/functions/kinematic_chain.h&gt;" />
+            </node>
+            <node concept="2EixSi" id="1W5BUKIkmLy" role="2EinRH" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
