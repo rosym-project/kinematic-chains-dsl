@@ -31,7 +31,6 @@
       <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG">
         <child id="1510949579266801461" name="sourceNodeQuery" index="5jGum" />
       </concept>
-      <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
         <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
@@ -304,17 +303,25 @@
     </node>
   </node>
   <node concept="jVnub" id="3hqim12GuyH">
-    <property role="TrG5h" value="switch_KinematicChainsFunctionDeclare" />
+    <property role="TrG5h" value="switch_KinematicChainsFunctionDefinition" />
     <ref role="phYkn" to="2g3d:5Tr1VsJKqPb" resolve="switch_FunctionDefinition" />
     <node concept="3aamgX" id="3hqim12GuyI" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="ptq9:691yVC03upY" resolve="ForwardPositionKinematics" />
-      <node concept="b5Tf3" id="3hqim12GuyM" role="1lVwrX" />
+      <node concept="gft3U" id="3zpuxteS1nT" role="1lVwrX">
+        <node concept="356sEF" id="3zpuxteS1nZ" role="gfFT$">
+          <property role="TrG5h" value=" " />
+        </node>
+      </node>
     </node>
     <node concept="3aamgX" id="3hqim12GuyP" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="ptq9:691yVC03uFU" resolve="ForwardVelocityKinematics" />
-      <node concept="b5Tf3" id="3hqim12GuyV" role="1lVwrX" />
+      <node concept="gft3U" id="3zpuxteS1o3" role="1lVwrX">
+        <node concept="356sEF" id="3zpuxteS1op" role="gfFT$">
+          <property role="TrG5h" value=" " />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="jVnub" id="3hqim12GuWV">
@@ -405,6 +412,28 @@
             </node>
             <node concept="2EixSi" id="1W5BUKIkmLy" role="2EinRH" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="jVnub" id="3zpuxteSc5n">
+    <property role="TrG5h" value="switch_KinematicChainsFunctionDeclaration" />
+    <ref role="phYkn" to="2g3d:w_xyS7aKgB" resolve="switch_FunctionDeclaration" />
+    <node concept="3aamgX" id="3zpuxteSc5o" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ptq9:691yVC03upY" resolve="ForwardPositionKinematics" />
+      <node concept="gft3U" id="3zpuxteSc5s" role="1lVwrX">
+        <node concept="356sEF" id="3zpuxteSc5y" role="gfFT$">
+          <property role="TrG5h" value=" " />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3zpuxteSc5$" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ptq9:691yVC03uFU" resolve="ForwardVelocityKinematics" />
+      <node concept="gft3U" id="3zpuxteSc5F" role="1lVwrX">
+        <node concept="356sEF" id="3zpuxteSc5L" role="gfFT$">
+          <property role="TrG5h" value=" " />
         </node>
       </node>
     </node>
