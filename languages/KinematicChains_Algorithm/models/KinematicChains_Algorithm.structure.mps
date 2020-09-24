@@ -28,7 +28,6 @@
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
-        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -110,7 +109,7 @@
   </node>
   <node concept="25R3W" id="4jkoN4V4nA5">
     <property role="3F6X1D" value="4959698152737307013" />
-    <property role="3GE5qa" value="Scheduler" />
+    <property role="3GE5qa" value="Operations" />
     <property role="TrG5h" value="SweepDirection" />
     <node concept="25R33" id="4jkoN4V4nA6" role="25R1y">
       <property role="3tVfz5" value="4959698152737307014" />
@@ -121,30 +120,36 @@
       <property role="TrG5h" value="Inward" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4jkoN4V4YVU">
-    <property role="EcuMT" value="4959698152737468154" />
-    <property role="TrG5h" value="SweepIterator" />
-    <property role="3GE5qa" value="Algorithms" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="yvgz:29RmJoXeePe" resolve="AlgorithmBlock" />
-    <node concept="1TJgyi" id="4jkoN4V4YVX" role="1TKVEl">
-      <property role="IQ2nx" value="4959698152737468157" />
-      <property role="TrG5h" value="direction" />
-      <ref role="AX2Wp" node="4jkoN4V4nA5" resolve="SweepDirection" />
-    </node>
-    <node concept="1TJgyj" id="4jkoN4V4YVV" role="1TKVEi">
-      <property role="IQ2ns" value="4959698152737468155" />
-      <property role="20kJfa" value="chain" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="cewj:3Wmswgx0nyU" resolve="Robot" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="72VlEUQSenF">
     <property role="EcuMT" value="8123181661285311979" />
     <property role="3GE5qa" value="Types" />
     <property role="TrG5h" value="KinematicChain" />
     <property role="34LRSv" value="KinematicChain" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <node concept="1TJgyj" id="74x228YaXrs" role="1TKVEi">
+      <property role="IQ2ns" value="8151805743682279132" />
+      <property role="20kJfa" value="robot" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="cewj:3Wmswgx0nyU" resolve="Robot" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2dauTz5X57j">
+    <property role="EcuMT" value="2542980835690435027" />
+    <property role="3GE5qa" value="Operations" />
+    <property role="TrG5h" value="SweepIterator" />
+    <property role="34LRSv" value="SweepIterator" />
+    <ref role="1TJDcQ" to="yvgz:3eP8Zudp5G4" resolve="FunctionBlock" />
+    <node concept="1TJgyj" id="2dauTz5X9SP" role="1TKVEi">
+      <property role="IQ2ns" value="2542980835690454581" />
+      <property role="20kJfa" value="chain" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="cewj:3Wmswgx0nyU" resolve="Robot" />
+    </node>
+    <node concept="1TJgyi" id="2dauTz5X9SN" role="1TKVEl">
+      <property role="IQ2nx" value="2542980835690454579" />
+      <property role="TrG5h" value="direction" />
+      <ref role="AX2Wp" node="4jkoN4V4nA5" resolve="SweepDirection" />
+    </node>
   </node>
 </model>
 
