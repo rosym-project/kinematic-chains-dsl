@@ -116,7 +116,7 @@
     <node concept="1N15co" id="3hqim12Gp4s" role="1s_3oS">
       <property role="TrG5h" value="parentFunction" />
       <node concept="3Tqbb2" id="3hqim12Gp6M" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
       </node>
     </node>
     <node concept="3aamgX" id="3hqim12GqqJ" role="3aUrZf">
@@ -146,7 +146,7 @@
     <node concept="1N15co" id="3hqim12GrOl" role="1s_3oS">
       <property role="TrG5h" value="parentFunction" />
       <node concept="3Tqbb2" id="3hqim12GrO_" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
       </node>
     </node>
     <node concept="356WMU" id="3hqim12Gs9e" role="13RCb5">
@@ -227,7 +227,7 @@
     <node concept="1N15co" id="3hqim12GsgS" role="1s_3oS">
       <property role="TrG5h" value="parentFunction" />
       <node concept="3Tqbb2" id="3hqim12Gsh3" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
       </node>
     </node>
     <node concept="356WMU" id="3hqim12Gsha" role="13RCb5">
@@ -379,6 +379,26 @@
               <property role="TrG5h" value="joint_velocity" />
             </node>
             <node concept="2EixSi" id="3hqim12Gvaj" role="2EinRH" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="36nMB0LBeJD" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ptq9:72VlEUQSenF" resolve="KinematicChain" />
+      <node concept="gft3U" id="36nMB0LBeL3" role="1lVwrX">
+        <node concept="356WMU" id="36nMB0LBeL7" role="gfFT$">
+          <node concept="356sEK" id="36nMB0LBeL9" role="383Ya9">
+            <node concept="356sEF" id="36nMB0LBeLa" role="356sEH">
+              <property role="TrG5h" value="struct" />
+            </node>
+            <node concept="356sEF" id="36nMB0LBeLf" role="356sEH">
+              <property role="TrG5h" value=" " />
+            </node>
+            <node concept="356sEF" id="36nMB0LBeLi" role="356sEH">
+              <property role="TrG5h" value="kcc_kinematic_chain" />
+            </node>
+            <node concept="2EixSi" id="36nMB0LBeLb" role="2EinRH" />
           </node>
         </node>
       </node>
