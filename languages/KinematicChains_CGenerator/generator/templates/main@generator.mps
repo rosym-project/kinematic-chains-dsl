@@ -8,6 +8,7 @@
   <imports>
     <import index="2g3d" ref="r:b9850e82-e887-4d10-9c8c-03f245d17299(main@generator)" />
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="ptq9" ref="r:c2aa9a09-8add-4915-80ea-aa731f9bf1ae(KinematicChains_Algorithm.structure)" implicit="true" />
   </imports>
   <registry>
@@ -25,7 +26,13 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
+      </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG">
@@ -80,19 +87,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
-        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
-      </concept>
-      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
-        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
-      </concept>
-      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -112,11 +114,35 @@
   </registry>
   <node concept="jVnub" id="3hqim12Gp4r">
     <property role="TrG5h" value="switch_KinematicChainsFunctionCall" />
-    <ref role="phYkn" to="2g3d:5Tr1VsJKqPj" resolve="switch_FunctionCall" />
-    <node concept="1N15co" id="3hqim12Gp4s" role="1s_3oS">
-      <property role="TrG5h" value="parentFunction" />
-      <node concept="3Tqbb2" id="3hqim12Gp6M" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
+    <ref role="phYkn" to="2g3d:30EzaY02S3$" resolve="switch_FCallFromConnectedBlock" />
+    <node concept="1N15co" id="7akAd_T$Tww" role="1s_3oS">
+      <property role="TrG5h" value="containerRoot" />
+      <node concept="3Tqbb2" id="7akAd_T$TwM" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+      </node>
+    </node>
+    <node concept="1N15co" id="149sRE925GI" role="1s_3oS">
+      <property role="TrG5h" value="originInstance" />
+      <node concept="3Tqbb2" id="149sRE925Rw" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+      </node>
+    </node>
+    <node concept="1N15co" id="3f5hl3BvlSZ" role="1s_3oS">
+      <property role="TrG5h" value="targetConnection" />
+      <node concept="3Tqbb2" id="3f5hl3Bvmyk" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:6VQU7bz8DV0" resolve="TriggerConnection" />
+      </node>
+    </node>
+    <node concept="1N15co" id="22$kc$4MtW7" role="1s_3oS">
+      <property role="TrG5h" value="instancePathMap" />
+      <node concept="3uibUv" id="22$kc$4Nd8Y" role="1N15GL">
+        <ref role="3uigEE" to="33ny:~HashMap" resolve="HashMap" />
+        <node concept="3Tqbb2" id="22$kc$4Nd8Z" role="11_B2D">
+          <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        </node>
+        <node concept="2I9FWS" id="22$kc$4Nd90" role="11_B2D">
+          <ref role="2I9WkF" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        </node>
       </node>
     </node>
     <node concept="3aamgX" id="3hqim12GqqJ" role="3aUrZf">
@@ -124,8 +150,19 @@
       <ref role="30HIoZ" to="ptq9:691yVC03upY" resolve="ForwardPositionKinematics" />
       <node concept="j$656" id="3hqim12Gsf5" role="1lVwrX">
         <ref role="v9R2y" node="3hqim12GrOc" resolve="forwardPositionKinematicsCall" />
-        <node concept="v3LJS" id="3hqim12Gsf8" role="v9R3O">
-          <ref role="v3LJV" node="3hqim12Gp4s" resolve="parentFunction" />
+        <node concept="v3LJS" id="3nBocIzaCBz" role="v9R3O">
+          <ref role="v3LJV" node="7akAd_T$Tww" resolve="containerRoot" />
+        </node>
+        <node concept="2OqwBi" id="3nBocIzaCJL" role="v9R3O">
+          <node concept="v3LJS" id="3nBocIzaCBP" role="2Oq$k0">
+            <ref role="v3LJV" node="3f5hl3BvlSZ" resolve="targetConnection" />
+          </node>
+          <node concept="3TrEf2" id="3nBocIzaCRY" role="2OqNvi">
+            <ref role="3Tt5mk" to="yvgz:6VQU7byzDnw" resolve="instance" />
+          </node>
+        </node>
+        <node concept="v3LJS" id="3nBocIzaD4l" role="v9R3O">
+          <ref role="v3LJV" node="22$kc$4MtW7" resolve="instancePathMap" />
         </node>
       </node>
     </node>
@@ -134,8 +171,19 @@
       <ref role="30HIoZ" to="ptq9:691yVC03uFU" resolve="ForwardVelocityKinematics" />
       <node concept="j$656" id="3hqim12GslE" role="1lVwrX">
         <ref role="v9R2y" node="3hqim12GsgQ" resolve="forwardVelocityKinematicsCall" />
-        <node concept="v3LJS" id="3hqim12GslH" role="v9R3O">
-          <ref role="v3LJV" node="3hqim12Gp4s" resolve="parentFunction" />
+        <node concept="v3LJS" id="3nBocIzaDos" role="v9R3O">
+          <ref role="v3LJV" node="7akAd_T$Tww" resolve="containerRoot" />
+        </node>
+        <node concept="2OqwBi" id="3nBocIzaDxq" role="v9R3O">
+          <node concept="v3LJS" id="3nBocIzaDpe" role="2Oq$k0">
+            <ref role="v3LJV" node="3f5hl3BvlSZ" resolve="targetConnection" />
+          </node>
+          <node concept="3TrEf2" id="3nBocIzaDGg" role="2OqNvi">
+            <ref role="3Tt5mk" to="yvgz:6VQU7byzDnw" resolve="instance" />
+          </node>
+        </node>
+        <node concept="v3LJS" id="3nBocIzaDHv" role="v9R3O">
+          <ref role="v3LJV" node="22$kc$4MtW7" resolve="instancePathMap" />
         </node>
       </node>
     </node>
@@ -143,10 +191,28 @@
   <node concept="13MO4I" id="3hqim12GrOc">
     <property role="TrG5h" value="forwardPositionKinematicsCall" />
     <ref role="3gUMe" to="ptq9:691yVC03upY" resolve="ForwardPositionKinematics" />
-    <node concept="1N15co" id="3hqim12GrOl" role="1s_3oS">
-      <property role="TrG5h" value="parentFunction" />
-      <node concept="3Tqbb2" id="3hqim12GrO_" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
+    <node concept="1N15co" id="3nBocIzaC0c" role="1s_3oS">
+      <property role="TrG5h" value="containerRoot" />
+      <node concept="3Tqbb2" id="3nBocIzaC0d" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+      </node>
+    </node>
+    <node concept="1N15co" id="7akAd_T$Twc" role="1s_3oS">
+      <property role="TrG5h" value="instance" />
+      <node concept="3Tqbb2" id="7akAd_T$Two" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+      </node>
+    </node>
+    <node concept="1N15co" id="149sRE91hZF" role="1s_3oS">
+      <property role="TrG5h" value="instancePathMap" />
+      <node concept="3uibUv" id="149sRE91hZG" role="1N15GL">
+        <ref role="3uigEE" to="33ny:~HashMap" resolve="HashMap" />
+        <node concept="3Tqbb2" id="149sRE91hZH" role="11_B2D">
+          <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        </node>
+        <node concept="2I9FWS" id="149sRE91hZI" role="11_B2D">
+          <ref role="2I9WkF" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        </node>
       </node>
     </node>
     <node concept="356WMU" id="3hqim12Gs9e" role="13RCb5">
@@ -162,20 +228,18 @@
           <property role="TrG5h" value="joint" />
           <node concept="5jKBG" id="2dCct2EOLW3" role="lGtFl">
             <ref role="v9R2y" to="2g3d:7akAd_T$TvZ" resolve="include_ResolveDataConnection" />
-            <node concept="1PxgMI" id="2dCct2EOMdd" role="v9R3O">
-              <property role="1BlNFB" value="true" />
-              <node concept="chp4Y" id="2dCct2EOMe0" role="3oSUPX">
-                <ref role="cht4Q" to="yvgz:3eP8Zudp5G4" resolve="FunctionBlock" />
-              </node>
-              <node concept="2OqwBi" id="2dCct2EOLYl" role="1m5AlR">
-                <node concept="30H73N" id="2dCct2EOLW8" role="2Oq$k0" />
-                <node concept="1mfA1w" id="2dCct2EOLZn" role="2OqNvi" />
-              </node>
+            <node concept="v3LJS" id="3nBocIzaCeR" role="v9R3O">
+              <ref role="v3LJV" node="3nBocIzaC0c" resolve="containerRoot" />
             </node>
-            <node concept="v3LJS" id="2dCct2EOMfJ" role="v9R3O">
-              <ref role="v3LJV" node="3hqim12GrOl" resolve="parentFunction" />
+            <node concept="v3LJS" id="3nBocIzaCi1" role="v9R3O">
+              <ref role="v3LJV" node="7akAd_T$Twc" resolve="instance" />
             </node>
-            <node concept="3clFbT" id="2dCct2EOMhB" role="v9R3O" />
+            <node concept="v3LJS" id="3nBocIzaCov" role="v9R3O">
+              <ref role="v3LJV" node="149sRE91hZF" resolve="instancePathMap" />
+            </node>
+            <node concept="3clFbT" id="3nBocIzaCwN" role="v9R3O">
+              <property role="3clFbU" value="true" />
+            </node>
             <node concept="3NFfHV" id="2dCct2EON9o" role="5jGum">
               <node concept="3clFbS" id="2dCct2EON9p" role="2VODD2">
                 <node concept="3clFbF" id="2dCct2EON9w" role="3cqZAp">
@@ -208,14 +272,14 @@
         <node concept="356sEF" id="2dCct2EOH1h" role="356sEH">
           <property role="TrG5h" value="fpk" />
         </node>
-        <node concept="356sEF" id="3hqim12Gs9I" role="356sEH">
-          <property role="TrG5h" value="args" />
-          <node concept="5jKBG" id="3hqim12GseE" role="lGtFl">
-            <ref role="v9R2y" to="2g3d:5Tr1VsJNE2J" resolve="include_FunctionCallArgList" />
-            <node concept="v3LJS" id="3hqim12GseH" role="v9R3O">
-              <ref role="v3LJV" node="3hqim12GrOl" resolve="parentFunction" />
-            </node>
-          </node>
+        <node concept="356sEF" id="3nBocIzaECj" role="356sEH">
+          <property role="TrG5h" value="(" />
+        </node>
+        <node concept="356sEF" id="3nBocIzaECk" role="356sEH">
+          <property role="TrG5h" value="/* TODO: arguments */" />
+        </node>
+        <node concept="356sEF" id="3nBocIzaECl" role="356sEH">
+          <property role="TrG5h" value=")" />
         </node>
         <node concept="2EixSi" id="3hqim12Gs9k" role="2EinRH" />
       </node>
@@ -224,10 +288,28 @@
   <node concept="13MO4I" id="3hqim12GsgQ">
     <property role="TrG5h" value="forwardVelocityKinematicsCall" />
     <ref role="3gUMe" to="ptq9:691yVC03uFU" resolve="ForwardVelocityKinematics" />
-    <node concept="1N15co" id="3hqim12GsgS" role="1s_3oS">
-      <property role="TrG5h" value="parentFunction" />
-      <node concept="3Tqbb2" id="3hqim12Gsh3" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
+    <node concept="1N15co" id="3nBocIzaDjK" role="1s_3oS">
+      <property role="TrG5h" value="containerRoot" />
+      <node concept="3Tqbb2" id="3nBocIzaDjL" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+      </node>
+    </node>
+    <node concept="1N15co" id="3nBocIzaDjM" role="1s_3oS">
+      <property role="TrG5h" value="instance" />
+      <node concept="3Tqbb2" id="3nBocIzaDjN" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+      </node>
+    </node>
+    <node concept="1N15co" id="3nBocIzaDjO" role="1s_3oS">
+      <property role="TrG5h" value="instancePathMap" />
+      <node concept="3uibUv" id="3nBocIzaDjP" role="1N15GL">
+        <ref role="3uigEE" to="33ny:~HashMap" resolve="HashMap" />
+        <node concept="3Tqbb2" id="3nBocIzaDjQ" role="11_B2D">
+          <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        </node>
+        <node concept="2I9FWS" id="3nBocIzaDjR" role="11_B2D">
+          <ref role="2I9WkF" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        </node>
       </node>
     </node>
     <node concept="356WMU" id="3hqim12Gsha" role="13RCb5">
@@ -257,18 +339,14 @@
                 </node>
               </node>
             </node>
-            <node concept="1PxgMI" id="2dCct2EOXw6" role="v9R3O">
-              <property role="1BlNFB" value="true" />
-              <node concept="chp4Y" id="2dCct2EOXy7" role="3oSUPX">
-                <ref role="cht4Q" to="yvgz:3eP8Zudp5G4" resolve="FunctionBlock" />
-              </node>
-              <node concept="2OqwBi" id="2dCct2EOX58" role="1m5AlR">
-                <node concept="30H73N" id="2dCct2EOWUx" role="2Oq$k0" />
-                <node concept="1mfA1w" id="2dCct2EOXmj" role="2OqNvi" />
-              </node>
+            <node concept="v3LJS" id="3nBocIzaDQT" role="v9R3O">
+              <ref role="v3LJV" node="3nBocIzaDjK" resolve="containerRoot" />
             </node>
-            <node concept="v3LJS" id="2dCct2EOXFl" role="v9R3O">
-              <ref role="v3LJV" node="3hqim12GsgS" resolve="parentFunction" />
+            <node concept="v3LJS" id="3nBocIzaDSA" role="v9R3O">
+              <ref role="v3LJV" node="3nBocIzaDjM" resolve="instance" />
+            </node>
+            <node concept="v3LJS" id="3nBocIzaE16" role="v9R3O">
+              <ref role="v3LJV" node="3nBocIzaDjO" resolve="instancePathMap" />
             </node>
             <node concept="3clFbT" id="2dCct2EOXJf" role="v9R3O" />
           </node>
@@ -288,14 +366,14 @@
         <node concept="356sEF" id="2dCct2EOXUy" role="356sEH">
           <property role="TrG5h" value="fvk" />
         </node>
-        <node concept="356sEF" id="3hqim12Gshk" role="356sEH">
-          <property role="TrG5h" value="args" />
-          <node concept="5jKBG" id="3hqim12Gshp" role="lGtFl">
-            <ref role="v9R2y" to="2g3d:5Tr1VsJNE2J" resolve="include_FunctionCallArgList" />
-            <node concept="v3LJS" id="3hqim12Gshs" role="v9R3O">
-              <ref role="v3LJV" node="3hqim12GsgS" resolve="parentFunction" />
-            </node>
-          </node>
+        <node concept="356sEF" id="3nBocIzaEvQ" role="356sEH">
+          <property role="TrG5h" value="(" />
+        </node>
+        <node concept="356sEF" id="3nBocIzaE$5" role="356sEH">
+          <property role="TrG5h" value="/* TODO: arguments */" />
+        </node>
+        <node concept="356sEF" id="3nBocIzaExX" role="356sEH">
+          <property role="TrG5h" value=")" />
         </node>
         <node concept="2EixSi" id="3hqim12Gshg" role="2EinRH" />
       </node>
@@ -438,7 +516,7 @@
   </node>
   <node concept="jVnub" id="3zpuxteSc5n">
     <property role="TrG5h" value="switch_KinematicChainsFunctionDeclaration" />
-    <ref role="phYkn" to="2g3d:w_xyS7aKgB" resolve="switch_FunctionDeclaration" />
+    <ref role="phYkn" to="2g3d:5Tr1VsJKqPb" resolve="switch_FunctionDefinition" />
     <node concept="3aamgX" id="3zpuxteSc5o" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="ptq9:691yVC03upY" resolve="ForwardPositionKinematics" />
