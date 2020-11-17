@@ -118,7 +118,7 @@
     <node concept="1N15co" id="7akAd_T$Tww" role="1s_3oS">
       <property role="TrG5h" value="containerRoot" />
       <node concept="3Tqbb2" id="7akAd_T$TwM" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        <ref role="ehGHo" to="yvgz:6VQU7bz8WKx" resolve="IBlock" />
       </node>
     </node>
     <node concept="1N15co" id="149sRE925GI" role="1s_3oS">
@@ -194,7 +194,7 @@
     <node concept="1N15co" id="3nBocIzaC0c" role="1s_3oS">
       <property role="TrG5h" value="containerRoot" />
       <node concept="3Tqbb2" id="3nBocIzaC0d" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        <ref role="ehGHo" to="yvgz:6VQU7bz8WKx" resolve="IBlock" />
       </node>
     </node>
     <node concept="1N15co" id="7akAd_T$Twc" role="1s_3oS">
@@ -291,7 +291,7 @@
     <node concept="1N15co" id="3nBocIzaDjK" role="1s_3oS">
       <property role="TrG5h" value="containerRoot" />
       <node concept="3Tqbb2" id="3nBocIzaDjL" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        <ref role="ehGHo" to="yvgz:6VQU7bz8WKx" resolve="IBlock" />
       </node>
     </node>
     <node concept="1N15co" id="3nBocIzaDjM" role="1s_3oS">
