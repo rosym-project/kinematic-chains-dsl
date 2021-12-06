@@ -813,7 +813,25 @@
                 <node concept="3SKdUt" id="425YjngPRht" role="3cqZAp">
                   <node concept="1PaTwC" id="425YjngPRhu" role="1aUNEU">
                     <node concept="3oM_SD" id="425YjngPRhw" role="1PaTwD">
-                      <property role="3oM_SC" value="get joint that has baselink as parentLink" />
+                      <property role="3oM_SC" value="get" />
+                    </node>
+                    <node concept="3oM_SD" id="6NfuGIqZLYq" role="1PaTwD">
+                      <property role="3oM_SC" value="joint" />
+                    </node>
+                    <node concept="3oM_SD" id="6NfuGIqZLYr" role="1PaTwD">
+                      <property role="3oM_SC" value="that" />
+                    </node>
+                    <node concept="3oM_SD" id="6NfuGIqZLYs" role="1PaTwD">
+                      <property role="3oM_SC" value="has" />
+                    </node>
+                    <node concept="3oM_SD" id="6NfuGIqZLYt" role="1PaTwD">
+                      <property role="3oM_SC" value="baselink" />
+                    </node>
+                    <node concept="3oM_SD" id="6NfuGIqZLYu" role="1PaTwD">
+                      <property role="3oM_SC" value="as" />
+                    </node>
+                    <node concept="3oM_SD" id="6NfuGIqZLYv" role="1PaTwD">
+                      <property role="3oM_SC" value="parentLink" />
                     </node>
                   </node>
                 </node>

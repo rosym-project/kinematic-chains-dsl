@@ -2,7 +2,7 @@
 <model ref="r:1abb0f48-bb1c-4d87-8ebc-ec04966a77d9(KinematicChains.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="d6881f78-a85d-4c9e-931e-30879e67afdd" name="KinematicChains" version="2" />
+    <use id="d6881f78-a85d-4c9e-931e-30879e67afdd" name="KinematicChains" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
   <imports />
